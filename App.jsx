@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 const COLORS = {
   deepNavy: "#1a1f3a",
@@ -448,6 +449,7 @@ export default function App() {
         onSelectDay={(day) => { setSelectedDay(day); setPage("day"); }}
         onAbout={() => setPage("about")}
       />
+      <Analytics />
     </div>
   );
 }
