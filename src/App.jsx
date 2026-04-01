@@ -21,38 +21,45 @@ const DAYS = [
       { text: "We are not called to occasional fellowship with God, but to continual communion.", author: "Brother Lawrence" },
       { text: "Apart from Christ, we can do nothing, not even begin to be what we are meant to be.", author: "John Stott" },
     ],
-    anchor: { text: "Dwell in Me, and I will dwell in you. Live in Me, and I will live in you. Just as no branch can bear fruit of itself without abiding in (being vitally united to) the vine, neither can you bear fruit unless you abide in Me.", ref: "John 15:4 (AMPC)" },
+    anchor: [
+      { text: "Dwell in Me, and I will dwell in you. Live in Me, and I will live in you. Just as no branch can bear fruit of itself without abiding in (being vitally united to) the vine, neither can you bear fruit unless you abide in Me.", ref: "John 15:4 (AMPC)" },
+      { text: "He who dwells in the shelter of the Most High will abide in the shadow of the Almighty.", ref: "Psalm 91:1 (ESV)" },
+    ],
     scriptures: ["John 15:1-7", "Psalm 91:1"],
     body: [
       { t: "p", x: "There is something deeply human about the desire for a place to belong, a space where we are not merely passing through, but where we can settle, rest, and remain. This longing is not accidental; it reflects the very heart of God toward us. From the beginning, His desire has never been for occasional encounters, but for continual dwelling." },
-      { t: "p", x: "In the Old Testament, the richness of this invitation is captured in the Hebrew word yashab, a word that begins with something as simple as 'to sit down,' yet unfolds into 'to remain, to settle, to inhabit.' It carries the sense of permanence, not movement; of residence, not visitation. When the Psalmist later declares, 'He who dwells in the shelter of the Most High,' he is describing a life that has chosen God as its settled habitation, not a refuge visited only in moments of need." },
-      { t: "p", x: "Alongside this, another word deepens the picture, lun, meaning to lodge, to stay overnight, to remain under covering. Together, these words reveal a profound truth: those who make God their dwelling place, who continually remain in Him, enter into a life marked by rest, covering, and abiding security." },
-      { t: "p", x: "Yet this privilege did not begin with man reaching for God, but with God reaching for man. In Eden, He walked with humanity in intimate fellowship. Even when sin disrupted that communion, His pursuit did not cease. Through Noah, He provided an ark. Through Abraham's descendants, He formed a people and declared His intent clearly: 'Let them make Me a sanctuary, that I may dwell among them' (Exodus 25:8). The word used, shakan, would later give rise to Shekinah, the manifest presence of God." },
+      { t: "p", x: "In the Old Testament, the richness of this invitation is captured in the Hebrew word yashab, a word that begins with something as simple as 'to sit down,' yet unfolds into 'to remain, to settle, to inhabit.' It carries the sense of permanence, not movement; of residence, not visitation. Its first appearance is seen in Genesis 4:20, where Jabal is described as the father of those who dwell in tents, those who settle and live in a place. When the Psalmist later declares, 'He who dwells in the shelter of the Most High,' he is describing a life that has chosen God as its settled habitation, not a refuge visited only in moments of need." },
+      { t: "p", x: "Alongside this, another word deepens the picture, lun, meaning to lodge, to stay overnight, to remain under covering. Its first appearance is found in Genesis 19:2, when Lot invites his visitors to come into his house and spend the night. This language introduces the idea of hospitality, shelter, and protection. Together, these words reveal a profound truth: those who make God their dwelling place, who continually remain in Him, enter into a life marked by rest, covering, and abiding security." },
+      { t: "p", x: "Yet this privilege did not begin with man reaching for God, but with God reaching for man. In Eden, He walked with humanity in intimate fellowship. Even when sin disrupted that communion, His pursuit did not cease. Through Noah, He provided an ark, a place of preservation and rest that foreshadowed something greater. Through Abraham's descendants, He formed a people and declared His intent clearly: 'Let them make Me a sanctuary, that I may dwell among them' (Exodus 25:8). The word used, shakan, would later give rise to Shekinah, the manifest presence of God." },
+      { t: "p", x: "Again and again, He affirmed this desire, declaring that He would dwell among His people and be their God (Exodus 29:45-46; Leviticus 26:11-12). This was never casual; it was covenantal, deeply intentional, echoing the closeness of Eden. Yet, for much of Israel's history, this reality was only partially experienced. God's presence was real, but often distant, glimpsed, approached cautiously, and at times forfeited through disobedience. Still, the promise remained alive in the hearts of prophets and psalmists, who spoke of a coming day when God would dwell fully and freely among His people." },
       { t: "s", x: "'For behold, I am coming and I will dwell in your midst...'", r: "Zechariah 2:10" },
       { t: "s", x: "'My dwelling place shall be with them... I will be their God, and they shall be My people.'", r: "Ezekiel 37:26-27" },
-      { t: "p", x: "Again and again, He affirmed this desire, declaring that He would dwell among His people and be their God. This was never casual; it was covenantal, deeply intentional, echoing the closeness of Eden." },
       { t: "d" },
-      { t: "p", x: "Then, in the fullness of time, what had long been promised became flesh. God did not merely visit. He came to dwell. Emmanuel, God with us, walked among men." },
-      { t: "p", x: "It was to these few, on the eve of His suffering, that Jesus spoke words that would carry eternal weight:" },
+      { t: "p", x: "Then, in the fullness of time, what had long been promised became flesh. God did not merely visit. He came to dwell. Emmanuel, God with us, walked among men. He revealed the Father's heart, extended grace, and invited many into relationship. Yet even then, many did not perceive Him. Crowds gathered for miracles but drifted away; leaders resisted Him; and only a few remained." },
+      { t: "p", x: "It was to these few, on the eve of His suffering, that Jesus spoke words that would carry eternal weight. Having loved them to the end, having served them in humility, He called them into something deeper:" },
       { t: "s", x: "'I am the true vine... Abide in Me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in Me.'", r: "John 15:1, 4 (ESV)" },
-      { t: "p", x: "The word He used, meno, means to remain, to continue, to stay. This was not a suggestion, but an invitation into living union." },
+      { t: "p", x: "The word He used, meno, means to remain, to continue, to stay. This was not a suggestion, but an invitation into living union. As the vine is the source of life for every branch, so Christ offers Himself as the continual source of life, strength, and fruitfulness for His people. But the branch must remain connected. Its life, its growth, and its fruit all depend on that abiding union." },
+      { t: "p", x: "For the disciples, and for us, this is both an invitation and a charge. The outcome of our lives is inseparably tied to the depth of our connection to Him. A branch does not strive to bear fruit; it simply remains, and the life of the vine does the rest. In the same way, the evidence of Christ abiding in us is seen in how His Word abides in us, shaping our desires, directing our prayers, and producing fruit that glorifies the Father:" },
       { t: "s", x: "'If you abide in Me, and My words abide in you, ask whatever you wish, and it will be done for you. By this My Father is glorified, that you bear much fruit...'", r: "John 15:7-8 (ESV)" },
       { t: "p", x: "Here lies the secret of a life that is fruitful, effective, and full of joy: not in striving, but in dwelling." },
       { t: "d" },
-      { t: "p", x: "As we begin this 40-day journey, we are not merely committing to a spiritual exercise; we are responding to a divine invitation. A life of abiding is not reserved for a few. It is the calling of every believer." },
+      { t: "p", x: "As we begin this 40-day journey, we are not merely committing to a spiritual exercise; we are responding to a divine invitation. A life of abiding is not reserved for a few. It is the calling of every believer. There is a depth of satisfaction, a richness of presence, and a fruitfulness of life that awaits those who will choose to remain." },
+      { t: "p", x: "May the Lord grant us grace in this season, not just to seek Him, but to stay with Him; not just to visit His presence, but to dwell in it. And as we do, may we discover the quiet joy of being rooted in Him, sustained by Him, and filled with the fullness that only His presence can give." },
+      { t: "p", x: "Take a moment today to pause before Him. Ask yourself honestly: have I been visiting, or have I been dwelling? What would it look like for me to truly remain in Him, through His Word, in prayer, in daily awareness of His presence? Bring your heart before Him and simply say:" },
       { t: "p", x: "Lord, teach me to dwell. Settle my heart in You. Let my life be rooted in Your presence, and let Your Word live richly within me. Make me fruitful as I remain in You. Amen." },
     ],
     journal: [
-      "In what ways have I been 'visiting' God rather than truly dwelling in Him?",
-      "What does it practically look like for me to remain in Christ daily through His Word, prayer, and awareness of His presence?",
-      "Where am I striving to produce fruit in my own strength instead of resting in my connection to the Vine?",
-      "If God is inviting me into a life of settled habitation, what would need to shift in my priorities for Him to truly become my dwelling place?",
+      "In what ways have I been 'visiting' God rather than truly dwelling in Him, and what patterns in my life reveal this?",
+      "What does it practically look like for me to remain (abide) in Christ daily through His Word, prayer, and awareness of His presence, and what is currently hindering that consistency?",
+      "Where am I striving to produce fruit in my own strength instead of resting in my connection to the Vine, and how can I surrender that striving?",
+      "If God is inviting me into a life of settled habitation (not occasional encounters), what would need to shift in my priorities, rhythms, or desires for Him to truly become my dwelling place?",
     ],
     prayers: [
       "Thank God for His desire to dwell with you and for the invitation to abide in His presence continually.",
       "Ask the Father to teach you how to remain in Him daily through His Word, through prayer, and through a conscious awareness of His presence.",
-      "Invite the Lord to remove every distraction and spiritual instability that keeps you from being settled in Him.",
-      "Pray for grace to let His Word dwell richly within you, shaping your desires and producing fruit that glorifies Him.",
+      "Invite the Lord to remove every distraction, inconsistency, and spiritual instability that keeps you from being settled in Him.",
+      "Ask Jesus to help you abide in Him as the true vine so that your life continually draws strength, life, and nourishment from Him.",
+      "Pray for grace to let His Word dwell richly within you, shaping your desires, directing your prayers, and producing fruit that glorifies Him.",
       "Ask the Lord to make your life fruitful as you remain in Him, that your life may reflect His fullness, His joy, and His presence daily.",
     ],
   },
@@ -325,8 +332,10 @@ function DayPg({ d, onBack, onNav }) {
     </div>
     <div style={{ padding: "32px 28px", background: C.cream, borderTop: "1px solid " + C.border, borderBottom: "1px solid " + C.border }}>
       <div style={{ ...ff("s", 500, 11), letterSpacing: 3, textTransform: "uppercase", color: C.gold, marginBottom: 16, textAlign: "center" }}>Today's Scripture</div>
-      <div style={{ ...ff("d", 400, 16), fontStyle: "italic", lineHeight: 1.85, color: C.text, textAlign: "center", padding: "0 8px" }}>{d.anchor.text}</div>
-      <div style={{ textAlign: "center", marginTop: 14, ...ff("s", 500, 13), color: C.gold }}>{d.anchor.ref}</div>
+      {(Array.isArray(d.anchor) ? d.anchor : [d.anchor]).map((a, i) => <div key={i} style={{ marginBottom: i < (Array.isArray(d.anchor) ? d.anchor.length : 1) - 1 ? 20 : 0 }}>
+        <div style={{ ...ff("d", 400, 16), fontStyle: "italic", lineHeight: 1.85, color: C.text, textAlign: "center", padding: "0 8px" }}>{a.text}</div>
+        <div style={{ textAlign: "center", marginTop: 10, ...ff("s", 500, 13), color: C.gold }}>{a.ref}</div>
+      </div>)}
     </div>
     <div style={{ padding: "40px 28px 16px" }}>{d.body.map((b, i) => {
       if (b.t === "p") return <p key={i} style={ps}>{b.x}</p>;
