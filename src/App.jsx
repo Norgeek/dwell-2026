@@ -63,6 +63,59 @@ const DAYS = [
       "Ask the Lord to make your life fruitful as you remain in Him, that your life may reflect His fullness, His joy, and His presence daily.",
     ],
   },
+  {
+    day: 2,
+    title: "Dining with the King",
+    audioUrl: "/audio/day-02.mp3",
+    quotes: [
+      { text: "God does not invite us to His table to observe Him, but to commune with Him.", author: "A. W. Tozer" },
+      { text: "The essence of the gospel is that we are invited to sit at God's table, not because we are worthy, but because Christ is.", author: "Timothy Keller" },
+    ],
+    anchor: [
+      { text: "On this mountain the Lord Almighty will prepare a feast of rich food for all peoples, a banquet of aged wine, the best of meats and the finest of wines.", ref: "Isaiah 25:6 (NIV)" },
+      { text: "Blessed are those who are invited to the wedding supper of the Lamb!", ref: "Revelation 19:9 (NIV)" },
+    ],
+    scriptures: ["Isaiah 25:6", "Revelation 19:9", "2 Samuel 9:1-13", "1 Kings 10:1-9", "Luke 14:15-24"],
+    body: [
+      { t: "p", x: "To dwell with God is to remain in His presence, but Scripture reveals that His desire goes even further. He does not only call us to stay with Him; He invites us to share life with Him. The language of dwelling naturally leads us to the picture of a table, where presence becomes fellowship and nearness becomes communion." },
+      { t: "p", x: "This was glimpsed in a remarkable moment in Israel's journey. When God revealed Himself on Mount Sinai, His presence was overwhelming, marked by thunder, fire, and thick clouds. The people stood at a distance in fear, yet Moses, along with Aaron, Nadab, Abihu, and seventy elders, was invited to come closer. What followed was unexpected. They beheld the God of Israel, and instead of being consumed, they ate and drank." },
+      { t: "s", x: "'They beheld God, and ate and drank.'", r: "Exodus 24:11 (ESV)" },
+      { t: "p", x: "What seemed like a moment of awe became a moment of fellowship. God was not only revealing His glory; He was extending His table." },
+      { t: "p", x: "In that culture, to eat together was never casual. It was a sign of acceptance, covenant, and relationship. From the earliest pages of Scripture, eating was tied to trust and participation, God inviting humanity to partake of what He had provided. Even within Israel's worship, offerings were not only given to God but shared in His presence." },
+      { t: "s", x: "'In the presence of the Lord your God... you shall eat and rejoice.'", r: "Deuteronomy 14:26 (ESV)" },
+      { t: "p", x: "That moment on the mountain was a foreshadowing, a glimpse of a God who desires not just reverence from afar, but relationship up close." },
+      { t: "p", x: "This thread runs consistently through Scripture. When Christ came, He did not keep His distance. He sat at tables, broke bread, and shared meals with those who followed Him. In His final hours, He gathered His disciples around a table once more. And even now, the invitation continues." },
+      { t: "s", x: "'If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me.'", r: "Revelation 3:20 (ESV)" },
+      { t: "p", x: "All of this points toward a final, glorious fulfillment, the marriage supper of the Lamb, where communion with Him will be complete and unbroken." },
+      { t: "d" },
+      { t: "p", x: "We begin to grasp the weight of this invitation when we consider what it means to dine with earthly royalty. Such moments are rare, significant, and often life altering. When the Queen of Sheba came to see Solomon, the experience of his table overwhelmed her; it exceeded every report she had heard." },
+      { t: "p", x: "Then there is Mephibosheth. He was the son of Jonathan, grandson of King Saul, a man with no standing, living in obscurity and unable to help himself. By every expectation, he had reason to fear the king rather than approach him. Yet King David sent for him, not because he had earned favor, but because of a covenant made with his father. Mephibosheth came trembling, fell on his face, and instead of judgment, received kindness. From that day, he ate continually at the king's table, like one of the king's own sons. A place he did not deserve became his place of belonging." },
+      { t: "p", x: "These moments resonate because something within us understands the value of proximity to greatness. If given the opportunity to dine with a king or a person of great influence, we would rearrange our schedules, travel great distances, and prepare ourselves carefully. We instinctively recognize that such invitations are rare, and that what happens at that table matters." },
+      { t: "p", x: "But there is a greater table set before us." },
+      { t: "p", x: "The prophets saw it, a feast prepared by the Lord Himself, rich and abundant beyond measure. Revelation speaks of it again, a wedding supper, not for a select few, but for all who respond to the invitation. This is not poetic imagery alone; it is the culmination of God's desire from the beginning, a people gathered near, not as spectators, but as participants in His presence." },
+      { t: "p", x: "And yet, this invitation carries something even more profound than any earthly parallel. At a king's banquet, you are one among many guests. But when God invites you, the invitation is deeply personal. The King of Kings, who holds all things together, desires fellowship with you, not as part of a crowd, but as one who is known and welcomed." },
+      { t: "d" },
+      { t: "p", x: "At every royal table, there are guests and there is family. Guests come for a moment; family belongs. Guests are invited occasionally; family has a seat that remains. And this is where the invitation of God becomes astonishing. He is not calling us to visit occasionally, but to belong continually. He is not offering a passing experience, but a place." },
+      { t: "p", x: "This is the heart of the gospel: not merely that we are forgiven, but that we are brought near; not only that we are redeemed, but that we are received. A table has been set, a place has been prepared, and the invitation has gone out." },
+      { t: "p", x: "So the question that remains is simple, yet searching. If we would sacrifice time, comfort, and convenience to sit for even a short while at the table of an earthly king, how will we respond to the invitation of the King of Kings?" },
+      { t: "p", x: "There is a seat prepared for you. The table is ready. The invitation stands." },
+      { t: "p", x: "Will you come, and will you remain?" },
+    ],
+    journal: [
+      "Think of the person whose table you would most want to sit at. What would you be willing to do to receive, and keep, that invitation? Now honestly compare that to how you have treated God's invitation.",
+      "Do you relate to God as a guest, occasional and dependent on how you feel, or as family, with a permanent seat you are meant to occupy? What has shaped that experience?",
+      "When God invites you to His table through His Word, prayer, or stillness, how do you usually respond? What does that response reveal?",
+      "What might change in your daily life if you truly believed that the King of Kings desires unhurried, undivided time with you?",
+    ],
+    prayers: [
+      "Thank God for the extraordinary privilege of His invitation, that the King of Kings has set a table and called you by name.",
+      "Ask His forgiveness for the times you have treated His invitation casually, delayed your response, or allowed lesser things to take priority.",
+      "Pray for a fresh revelation of whose table it is, and what it means to be invited, not as a guest, but as one who belongs.",
+      "Ask God to awaken in you a deep hunger for His presence, a hunger that will not be satisfied by anything else.",
+      "Pray for those who have not yet accepted this invitation, that they would hear His call and respond with open hearts.",
+    ],
+    declaration: "I thank the Lord Jesus for inviting me to His table; not as a spectator, but as one welcomed into true fellowship. Today, I receive my place with the King, not by my worth, but by His grace. I choose to draw near and commune with Him, knowing I am accepted, known, and loved. I will not stay at a distance; I will sit, remain, and share in His presence. Like one of His own, I belong at His table, and I partake freely of all He has prepared. Today, I respond to His invitation with a willing and abiding heart.",
+  },
 ];
 
 const ALL = Array.from({ length: 40 }, (_, i) => { const n = i + 1; const f = DAYS.find(d => d.day === n); return { day: n, title: f ? f.title : "Coming Soon", pub: !!f }; });
@@ -387,6 +440,13 @@ function DayPg({ d, onBack, onNav }) {
       <div style={{ ...ff("s", 300, 12), letterSpacing: 2, textTransform: "uppercase", color: C.muted, marginBottom: 20 }}>Bring these before the Lord</div>
       {d.prayers.map((p, i) => <div key={i} style={{ padding: "12px 0 12px 26px", borderBottom: i < d.prayers.length - 1 ? "1px solid rgba(200,164,92,0.15)" : "none", position: "relative", ...ff("b", 400, 15), lineHeight: 1.7, color: C.sec }}><span style={{ position: "absolute", left: 4, top: 14, fontSize: 8, color: C.gold, opacity: 0.7 }}>&#10022;</span>{p}</div>)}
     </div>
+    {d.declaration && <div style={{ padding: "28px 28px 32px", background: C.white, borderTop: "1px solid " + C.border }}>
+      <div style={{ ...ff("d", 600, 20), color: C.navy, marginBottom: 4 }}>Daily Declaration</div>
+      <div style={{ ...ff("s", 300, 12), letterSpacing: 2, textTransform: "uppercase", color: C.muted, marginBottom: 20 }}>Speak this over your life today</div>
+      <div style={{ padding: "22px 24px", background: C.cream, borderLeft: "3px solid " + C.gold, borderRadius: "0 8px 8px 0" }}>
+        <p style={{ ...ff("b", 400, 15), fontStyle: "italic", lineHeight: 1.85, color: C.text, margin: 0 }}>{d.declaration}</p>
+      </div>
+    </div>}
     <Share day={d.day} title={d.title} />
     <div style={{ padding: "18px 28px", display: "flex", justifyContent: "space-between", alignItems: "center", background: C.cream, borderTop: "1px solid " + C.border }}>
       {prev ? <button onClick={() => onNav(prev.day)} style={nb}>&larr; Day {String(prev.day).padStart(2, "0")}</button> : <div />}
