@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 // CONFIG: Set your Google Apps Script deployed web app URL here
 // after deploying the Code.gs as a web app.
 // ══════════════════════════════════════════════════════════
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytbab0oVNG1n2N2mFKRPvNfgt3VWK2MZV356Ic6So9frl5gC0qwt0GExorl5Bg6qWf7w/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcaKNT-807GrK0s3nUQUL7P8uWydCbSC24jJs9-9TNRJgJoAcVf1zoXfLvrAcXApSMpQ/exec";
 
 const C = {
   navy: "#1a1f3a", gold: "#c8a45c", softGold: "#e8d5a3", cream: "#f5f0e3",
