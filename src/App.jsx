@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 // CONFIG: Set your Google Apps Script deployed web app URL here
 // after deploying the Code.gs as a web app.
 // ══════════════════════════════════════════════════════════
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcaKNT-807GrK0s3nUQUL7P8uWydCbSC24jJs9-9TNRJgJoAcVf1zoXfLvrAcXApSMpQ/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxM66bZYNF6XWdTR5Hpf3Z51ziBaQVmJm5WromnCMFD47LGqaiSJmLV7osH2oEeQ1cHDw/exec";
 
 const C = {
   navy: "#1a1f3a", gold: "#c8a45c", softGold: "#e8d5a3", cream: "#f5f0e3",
@@ -113,10 +113,25 @@ function PrayerForm() {
     if (!anon && !f.first.trim()) return;
     if (!f.cat || !f.req.trim()) return;
     setSending(true);
-    const data = { firstName: anon ? "Anonymous" : f.first.trim(), lastName: anon ? "" : f.last.trim(), email: anon ? "anonymous" : f.email.trim(), category: f.cat, request: f.req.trim(), urgency: f.urgency, forWhom: f.forWhom.join(", ") || "Not specified", isPrivate: f.privacy ? "Private" : "Shared", anonymous: anon, timestamp: new Date().toISOString() };
-    if (SCRIPT_URL) {
-      try { await fetch(SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ action: "prayer", ...data }) }); } catch (e) { console.log("Submit error", e); }
-    }
+    const payload = { action: "prayer", firstName: anon ? "Anonymous" : f.first.trim(), lastName: anon ? "" : f.last.trim(), email: anon ? "anonymous" : f.email.trim(), category: f.cat, request: f.req.trim(), urgency: f.urgency, forWhom: f.forWhom.join(", ") || "Not specified", isPrivate: f.privacy ? "Private" : "Shared", anonymous: anon, timestamp: new Date().toISOString() };
+    try {
+      const iframe = document.createElement("iframe");
+      iframe.name = "prayerFrame";
+      iframe.style.display = "none";
+      document.body.appendChild(iframe);
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = SCRIPT_URL;
+      form.target = "prayerFrame";
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = "payload";
+      input.value = JSON.stringify(payload);
+      form.appendChild(input);
+      document.body.appendChild(form);
+      form.submit();
+      setTimeout(() => { document.body.removeChild(form); document.body.removeChild(iframe); }, 5000);
+    } catch (e) { console.log("Submit error", e); }
     setOk(true); setSending(false);
   };
 
@@ -188,10 +203,25 @@ function TestimonyForm() {
     if (!anon && !f.first.trim()) return;
     if (!f.title.trim() || !f.story.trim()) return;
     setSending(true);
-    const data = { firstName: anon ? "Anonymous" : f.first.trim(), lastName: anon ? "" : f.last.trim(), email: anon ? "anonymous" : f.email.trim(), category: f.cat, title: f.title.trim(), story: f.story.trim(), faithLevel: f.faith, sharePublicly: f.share ? "Public" : "Private", anonymous: anon, timestamp: new Date().toISOString() };
-    if (SCRIPT_URL) {
-      try { await fetch(SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ action: "testimony", ...data }) }); } catch (e) { console.log("Submit error", e); }
-    }
+    const payload = { action: "testimony", firstName: anon ? "Anonymous" : f.first.trim(), lastName: anon ? "" : f.last.trim(), email: anon ? "anonymous" : f.email.trim(), category: f.cat, title: f.title.trim(), story: f.story.trim(), faithLevel: f.faith, sharePublicly: f.share ? "Public" : "Private", anonymous: anon, timestamp: new Date().toISOString() };
+    try {
+      const iframe = document.createElement("iframe");
+      iframe.name = "testimonyFrame";
+      iframe.style.display = "none";
+      document.body.appendChild(iframe);
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = SCRIPT_URL;
+      form.target = "testimonyFrame";
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = "payload";
+      input.value = JSON.stringify(payload);
+      form.appendChild(input);
+      document.body.appendChild(form);
+      form.submit();
+      setTimeout(() => { document.body.removeChild(form); document.body.removeChild(iframe); }, 5000);
+    } catch (e) { console.log("Submit error", e); }
     setOk(true); setSending(false);
   };
 
