@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useState, useEffect, useRef } from "react";
 
 // ══════════════════════════════════════════════════════════
@@ -516,6 +517,6 @@ export default function App() {
   const [sel, setSel] = useState(null);
   const dd = sel ? DAYS.find(d => d.day === sel) : null;
   const w = { maxWidth: 740, margin: "0 auto", boxShadow: "0 0 60px rgba(26,31,58,0.08)" };
-  if (pg === "day" && dd) return <div style={w}><DayPg d={dd} onBack={() => { setPg("land"); setSel(null); }} onNav={d => setSel(d)} /></div>;
-  return <div style={w}><Landing onDay={d => { setSel(d); setPg("day"); }} /></div>;
+ if (pg === "day" && dd) return <div style={w}><DayPg d={dd} onBack={() => { setPg("land"); setSel(null); }} onNav={d => setSel(d)} /><Analytics /></div>;
+  return <div style={w}><Landing onDay={d => { setSel(d); setPg("day"); }} /><Analytics /></div>;
 }
