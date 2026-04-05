@@ -18,7 +18,7 @@ const DAYS = [
   {
     day: 1, title: "The Invitation to Dwell",
     audioUrl: "/audio/day-01.mp3",
-       quotes: [
+    quotes: [
       { text: "We are not called to occasional fellowship with God, but to continual communion.", author: "Brother Lawrence" },
       { text: "Apart from Christ, we can do nothing, not even begin to be what we are meant to be.", author: "John Stott" },
     ],
@@ -267,23 +267,81 @@ const DAYS = [
     ],
     declaration: "I thank God for the gift of time, and I choose to steward it with wisdom and purpose. I will not be ruled by distraction or overwhelmed by what is merely urgent; I choose what is necessary and eternal. I make room for God first, giving Him my attention, my focus, and my best. My days are ordered by His wisdom, and my heart is attentive to His leading. I release every excess and realign my priorities with His will. As I walk with Him daily, my life is being shaped, and I bear fruit that remains.",
   },
+  {
+    day: 6,
+    title: "The Power of Focus",
+    audioUrl: "/audio/day-06.mp3",
+    quotes: [
+      { text: "A double-minded man is unstable in all his ways, but a focused man is powerful in all his ways.", author: "A. W. Tozer" },
+      { text: "God's Word is the compass that keeps us on course when everything else is shifting.", author: "Derek Prince" },
+    ],
+    anchor: [
+      { text: "It was by faith that Noah built a large boat to save his family from the flood. He obeyed God, who warned him about things that had never happened before. By his faith Noah condemned the rest of the world, and he received the righteousness that comes by faith.", ref: "Hebrews 11:7 (NLT)" },
+      { text: "Brethren, I do not count myself to have apprehended; but one thing I do, forgetting those things which are behind and reaching forward to those things which are ahead, I press toward the goal for the prize of the upward call of God in Christ Jesus.", ref: "Philippians 3:13-14 (NKJV)" },
+    ],
+    scriptures: ["Hebrews 11:7", "Philippians 3:13-14", "Hebrews 12:1-2"],
+    body: [
+      { t: "p", x: "In a world where everything seems urgent, attention has become one of the most contested spaces of our lives. Every responsibility, opportunity, and demand presses in, asking to be prioritised. And over time, what consistently holds our attention begins to shape the direction of our lives." },
+      { t: "p", x: "This is not unique to our time. In the days of Noah, life was also full and active. People were building, celebrating, and progressing, yet completely unaware of the deeper reality unfolding around them. Their lives were occupied, but not aligned with what God was doing." },
+      { t: "p", x: "This invites an honest reflection: what is presently shaping your attention, God's voice, or the rhythm of everything around you?" },
+      { t: "p", x: "Focus is more than concentration. It is the alignment of heart, mind, and action toward what God has made important in a given season. It is choosing to give yourself fully to what carries eternal weight, rather than being gradually scattered across many lesser things. Focus does not increase activity; it clarifies direction." },
+      { t: "p", x: "Noah's life reveals what this kind of focus looks like. In a generation marked by corruption and noise, he walked with God. From that place of fellowship, he received an assignment unlike anything the world had seen. He was called to prepare for something invisible, something that had never happened before." },
+      { t: "s", x: "'By faith Noah... being warned of things not yet seen... prepared an ark...'", r: "Hebrews 11:7" },
+      { t: "p", x: "His obedience was anchored in what God had spoken, not in what he could verify. That is the foundation of true focus, choosing to build your life around God's word, even when there is no immediate evidence to support it." },
+      { t: "d" },
+      { t: "p", x: "There is often a quiet pull within us between two directions. One draws us toward what is visible, immediate, and widely affirmed. The other draws us toward what God has said, which may require patience, trust, and endurance. Though both are present, only one leads to lasting fruit." },
+      { t: "p", x: "Noah gave his attention to what was spoken. And he sustained that choice over time. For decades, with no visible sign that the promise would unfold, he continued building. His focus was not sustained by excitement or external validation, but by a settled conviction that God's word was trustworthy." },
+      { t: "p", x: "This kind of steady attention is reflected in the nature of the eagle. When an eagle fixes its gaze on its target, it is not easily diverted. It adjusts to changing conditions yet remains locked on its objective. In a similar way, spiritual focus is the discipline of keeping our inner gaze steady, even when circumstances shift around us." },
+      { t: "p", x: "This same posture is expressed by Paul the Apostle:" },
+      { t: "s", x: "'Forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal...'", r: "Philippians 3:13-14" },
+      { t: "p", x: "Paul's words reveal that focus requires intentionality. It involves releasing what is behind, whether success or failure, and giving yourself fully to what God has set ahead. It is not passive; it is a deliberate, forward movement shaped by purpose." },
+      { t: "p", x: "Noah built. Paul pressed forward. Both lived with a clear sense of direction." },
+      { t: "d" },
+      { t: "p", x: "This becomes visible in how focus is formed in our lives. It begins with faith, choosing God's word above competing voices. It is strengthened through obedience, removing alternatives and committing wholeheartedly. It grows through clarity, returning often to the question, 'What is God asking of me now?' And it is sustained through structure, shaping our days in ways that protect what matters most." },
+      { t: "p", x: "Because focus is not preserved by intention alone. It is guarded by the rhythms we cultivate." },
+      { t: "p", x: "Scripture encourages us to lay aside every weight and run with endurance, fixing our eyes on Jesus. That is where focus finds its strength. Not in striving harder, but in directing our gaze rightly. The more steadily we look to Christ, the less compelling distractions become." },
+      { t: "p", x: "And this connects us directly to the heart of this journey, learning to dwell." },
+      { t: "p", x: "Focus, at its deepest level, is not simply discipline. It is devotion expressed over time. As we abide in Christ, the true vine, our desires are reordered, our attention is refined, and our lives begin to align with His purposes. What once competed for space begins to lose its hold as His presence becomes central." },
+      { t: "p", x: "This is how focus begins to take shape in our daily lives." },
+      { t: "p", x: "It takes shape when we choose unhurried moments with God over constant activity. It takes shape when we quietly decline what is unnecessary, making room for what is essential. It takes shape through steady, unseen obedience, even when results are not immediate. It takes shape as we remain consistent, returning to Him again and again." },
+      { t: "p", x: "Over time, this kind of life produces depth, clarity, and fruit that lasts." },
+      { t: "d" },
+      { t: "p", x: "So as you move through today, bring this before the Lord:" },
+      { t: "p", x: "What has been forming the direction of my attention? Where is God inviting me to become more focused? What might need to be set aside so that I can give myself more fully to Him?" },
+      { t: "p", x: "Lord, draw my attention back to You. Teach me to value what You are speaking above what I can see. Help me to walk with steady focus, shaped by Your presence and guided by Your Word. As I dwell in You, let my life be aligned with Your purpose and bear fruit that remains. Amen." },
+    ],
+    journal: [
+      "What is currently shaping the direction of my attention, God's voice or the rhythm of everything around me?",
+      "Where might God be inviting me to become more focused in this season?",
+      "What visible pressures or distractions tend to pull my attention away from what He has spoken?",
+      "What practical adjustments can I make to align my daily rhythms with what truly matters?",
+    ],
+    prayers: [
+      "Thank God for His Word, which gives clarity and direction even when circumstances are unclear.",
+      "Ask for grace to discern what He is asking of you in this season.",
+      "Pray for strength to remain focused, especially when there is no immediate evidence of progress.",
+      "Ask the Holy Spirit to help you build rhythms that protect your time and attention.",
+      "Pray for a deeper ability to dwell in Christ, so that your life becomes aligned with His purpose and produces lasting fruit.",
+    ],
+    declaration: "I fix my attention on God and align my heart, mind, and actions with His Word. Like Noah, I choose to build my life on what He has spoken, even when I cannot yet see the outcome. I release every distraction and competing voice, and I give myself fully to what carries eternal weight. I press forward with purpose, forgetting what is behind and reaching toward what God has set before me. My focus is steady, my direction is clear, and my life is anchored in Christ. As I dwell in Him, my attention is refined, my obedience is strengthened, and I bear lasting fruit.",
+  },
 ];
- 
+
 const ALL = Array.from({ length: 40 }, (_, i) => { const n = i + 1; const f = DAYS.find(d => d.day === n); return { day: n, title: f ? f.title : "Coming Soon", pub: !!f }; });
- 
+
 const PRAYER_CATS = ["Healing & Health","Family & Relationships","Career & Purpose","Financial Breakthrough","Spiritual Growth & Warfare","Grief & Loss","Peace & Mental Health","Salvation of a Loved One","Marriage & Restoration","Guidance & Decisions","Protection & Safety","Other"];
 const TEST_CATS = [{l:"Healing",e:"&#127807;"},{l:"Breakthrough",e:"&#9889;"},{l:"Provision",e:"&#128155;"},{l:"Salvation",e:"&#10013;"},{l:"Restoration",e:"&#128260;"},{l:"Protection",e:"&#128737;"},{l:"Other",e:"&#10024;"}];
 const FAITH_LABELS = {1:"Struggling",2:"Hopeful",3:"Trusting",4:"Confident",5:"Unshakeable"};
- 
+
 // ── Styles ──
 const ff = (f, w, s) => ({ fontFamily: f === "d" ? "'Cormorant Garamond',Georgia,serif" : f === "b" ? "'Lora',Georgia,serif" : "'Source Sans 3',sans-serif", fontWeight: w, fontSize: s });
- 
+
 function Bar({ h }) { return <div style={{ height: h || 5, background: "linear-gradient(90deg, " + C.navy + " 0%, " + C.gold + " 50%, " + C.navy + " 100%)" }} />; }
 function Orn({ s }) { return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, color: C.gold, opacity: 0.5, ...s }}><div style={{ width: 40, height: 1, background: C.gold }} /><span style={{ fontSize: 18 }}>&#10022;</span><div style={{ width: 40, height: 1, background: C.gold }} /></div>; }
 function Ft() { return <div style={{ padding: "20px 28px", textAlign: "center", background: C.navy, borderTop: "1px solid rgba(200,164,92,0.2)" }}><div style={{ ...ff("s", 400, 11), letterSpacing: 1.5, color: "rgba(255,255,255,0.45)" }}>&copy; {S.year} {S.theme} &nbsp;||&nbsp; {S.name}</div></div>; }
 function Hd() { return <div style={{ background: C.navy, padding: "20px 20px 16px", textAlign: "center", position: "relative", overflow: "hidden" }}><div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 0%, rgba(200,164,92,0.12) 0%, transparent 70%)", pointerEvents: "none" }} /><div style={{ ...ff("s", 300, 10), letterSpacing: 3, textTransform: "uppercase", color: C.gold, opacity: 0.7, marginBottom: 4, position: "relative" }}>{S.name}</div><div style={{ ...ff("d", 700, 22), letterSpacing: 3, textTransform: "uppercase", color: "#fff", position: "relative" }}>{S.theme} {S.year}</div></div>; }
 function Aud({ url }) { if (!url) return <div style={{ textAlign: "center", padding: "12px 0", ...ff("s", 400, 13), color: "rgba(255,255,255,0.4)" }}>Audio coming soon</div>; return <audio controls preload="metadata" style={{ width: "100%", borderRadius: 4 }} src={url} />; }
- 
+
 function Share({ day, title }) {
   const [cp, setCp] = useState(false);
   const u = typeof window !== "undefined" ? window.location.origin : "https://adornedandarmed.com";
@@ -297,22 +355,22 @@ function Share({ day, title }) {
     <button onClick={() => { navigator.clipboard.writeText(su).then(() => { setCp(true); setTimeout(() => setCp(false), 2000); }); }} style={{ ...bs, border: "1px solid " + C.border }}>{cp ? <svg width="16" height="16" viewBox="0 0 24 24" fill={C.gold} stroke={C.gold} strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg> : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={C.navy} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>}</button>
   </div></div>;
 }
- 
+
 // ══════════════════════════════════════════════════════════
 // FORM COMPONENTS
 // ══════════════════════════════════════════════════════════
- 
+
 const inp = { width: "100%", padding: "13px 16px", borderRadius: 8, border: "1px solid " + C.border, fontFamily: "'Lora',Georgia,serif", fontSize: 14, color: C.text, background: C.white, outline: "none" };
 const lbl = { ...ff("s", 600, 10), letterSpacing: 2, textTransform: "uppercase", color: C.gold, marginBottom: 8, display: "block" };
 const sub = { width: "100%", padding: "15px 24px", background: "linear-gradient(135deg, " + C.navy + " 0%, #2a3f6a 100%)", color: C.gold, border: "none", borderRadius: 10, ...ff("s", 700, 12), letterSpacing: 2, textTransform: "uppercase", cursor: "pointer", transition: "all 0.2s" };
 const verse = { padding: "16px 18px", background: C.cream, borderLeft: "3px solid " + C.gold, borderRadius: "0 8px 8px 0", margin: "24px 0" };
- 
+
 function PrayerForm() {
   const [anon, setAnon] = useState(false);
   const [f, setF] = useState({ first: "", last: "", email: "", cat: "", req: "", urgency: "Urgent", forWhom: ["Myself"], privacy: true });
   const [ok, setOk] = useState(false);
   const [sending, setSending] = useState(false);
- 
+
   const submit = async () => {
     if (!anon && !f.first.trim()) return;
     if (!f.cat || !f.req.trim()) return;
@@ -338,11 +396,11 @@ function PrayerForm() {
     } catch (e) { console.log("Submit error", e); }
     setOk(true); setSending(false);
   };
- 
+
   const tog = (item) => { setF(p => ({ ...p, forWhom: p.forWhom.includes(item) ? p.forWhom.filter(x => x !== item) : [...p.forWhom, item] })); };
- 
+
   if (ok) return <div style={{ textAlign: "center", padding: "48px 20px" }}><div style={{ fontSize: 42, marginBottom: 12 }}>&#128330;</div><div style={{ ...ff("d", 700, 26), color: C.navy, marginBottom: 8 }}>Your Request Is Lifted</div><div style={{ ...ff("b", 400, 14), color: C.muted, lineHeight: 1.7, maxWidth: 320, margin: "0 auto 20px" }}>We are standing in agreement with you. May God's peace guard your heart and mind in Christ Jesus.</div><button onClick={() => { setOk(false); setF({ first: "", last: "", email: "", cat: "", req: "", urgency: "Urgent", forWhom: ["Myself"], privacy: true }); setAnon(false); }} style={{ ...ff("s", 600, 11), letterSpacing: 2, textTransform: "uppercase", padding: "10px 24px", background: "none", border: "1px solid " + C.gold, borderRadius: 8, color: C.gold, cursor: "pointer" }}>Submit Another Request</button></div>;
- 
+
   return <div>
     {/* Anon Toggle */}
     <div style={{ marginBottom: 20 }}><label style={lbl}>Submission Type</label>
@@ -352,28 +410,28 @@ function PrayerForm() {
       </div>
       {anon && <div style={{ ...ff("s", 400, 12), color: C.gold, background: C.cream, border: "1px solid " + C.border, borderRadius: 8, padding: "10px 14px", marginTop: 6 }}>Your name and email will not be stored. Your request will be marked as Anonymous.</div>}
     </div>
- 
+
     {!anon && <><div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
       <div><label style={lbl}>First Name</label><input type="text" value={f.first} onChange={e => setF({ ...f, first: e.target.value })} placeholder="Your name" style={inp} /></div>
       <div><label style={lbl}>Last Name</label><input type="text" value={f.last} onChange={e => setF({ ...f, last: e.target.value })} placeholder="Last name" style={inp} /></div>
     </div>
     <div style={{ marginBottom: 16 }}><label style={lbl}>Email Address</label><input type="email" value={f.email} onChange={e => setF({ ...f, email: e.target.value })} placeholder="your@email.com" style={inp} /></div></>}
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Prayer Category</label>
       <select value={f.cat} onChange={e => setF({ ...f, cat: e.target.value })} style={{ ...inp, cursor: "pointer" }}>
         <option value="">Select a category...</option>
         {PRAYER_CATS.map(c => <option key={c} value={c}>{c}</option>)}
       </select>
     </div>
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Your Prayer Request</label><textarea value={f.req} onChange={e => setF({ ...f, req: e.target.value })} placeholder="Share what's on your heart..." maxLength={1000} style={{ ...inp, minHeight: 120, resize: "vertical" }} /><div style={{ ...ff("s", 400, 10), color: C.muted, textAlign: "right", marginTop: 4 }}>{f.req.length} / 1000</div></div>
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Urgency</label><div style={{ display: "flex", gap: 8 }}>
       {[{ l: "Ongoing", e: "&#128330;" }, { l: "This Week", e: "&#9203;" }, { l: "Urgent", e: "&#128293;" }].map(u => (
         <button key={u.l} onClick={() => setF({ ...f, urgency: u.l })} style={{ flex: 1, padding: "10px 8px", border: "1px solid " + (f.urgency === u.l ? C.gold : C.border), borderRadius: 8, background: f.urgency === u.l ? C.cream : C.white, ...ff("s", 600, 11), letterSpacing: 1, color: f.urgency === u.l ? C.navy : C.muted, cursor: "pointer", transition: "all 0.2s" }} dangerouslySetInnerHTML={{ __html: u.e + " " + u.l }} />
       ))}
     </div></div>
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Praying For</label><div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
       {["Myself", "A family member", "A friend or colleague", "My community / nation"].map(item => (
         <label key={item} style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer", ...ff("s", 400, 13), color: C.sec }}>
@@ -382,27 +440,27 @@ function PrayerForm() {
         </label>
       ))}
     </div></div>
- 
+
     <div style={{ marginBottom: 20 }}><label style={lbl}>Visibility</label>
       <div onClick={() => setF({ ...f, privacy: !f.privacy })} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: C.white, border: "1px solid " + C.border, borderRadius: 8, padding: "12px 16px", cursor: "pointer" }}>
         <span style={{ ...ff("s", 400, 13), color: C.text }}>{f.privacy ? "Keep my request private (prayer team only)" : "Share with the community"}</span>
         <div style={{ width: 38, height: 21, background: f.privacy ? C.gold : "#ddd", borderRadius: 10, position: "relative", transition: "background 0.3s" }}><div style={{ position: "absolute", top: 3, left: f.privacy ? 20 : 3, width: 15, height: 15, borderRadius: "50%", background: "#fff", transition: "left 0.3s" }} /></div>
       </div>
     </div>
- 
+
     <div style={verse}><div style={{ ...ff("d", 500, 14), fontStyle: "italic", color: C.navy, lineHeight: 1.75 }}>"Cast all your anxiety on him because he cares for you."</div><div style={{ ...ff("s", 500, 11), color: C.gold, marginTop: 6 }}>1 Peter 5:7</div></div>
- 
+
     <button onClick={submit} disabled={sending} style={{ ...sub, opacity: sending ? 0.6 : 1 }}>{sending ? "Sending your request..." : "Submit Prayer Request"}</button>
     <div style={{ ...ff("d", 400, 13), fontStyle: "italic", color: C.muted, textAlign: "center", marginTop: 12 }}>Received with love, faith, and confidentiality.</div>
   </div>;
 }
- 
+
 function TestimonyForm() {
   const [anon, setAnon] = useState(false);
   const [f, setF] = useState({ first: "", last: "", email: "", cat: "Breakthrough", title: "", story: "", faith: 3, share: false });
   const [ok, setOk] = useState(false);
   const [sending, setSending] = useState(false);
- 
+
   const submit = async () => {
     if (!anon && !f.first.trim()) return;
     if (!f.title.trim() || !f.story.trim()) return;
@@ -428,9 +486,9 @@ function TestimonyForm() {
     } catch (e) { console.log("Submit error", e); }
     setOk(true); setSending(false);
   };
- 
+
   if (ok) return <div style={{ textAlign: "center", padding: "48px 20px" }}><div style={{ fontSize: 42, marginBottom: 12 }}>&#128081;</div><div style={{ ...ff("d", 700, 26), color: C.navy, marginBottom: 8 }}>Glory to God!</div><div style={{ ...ff("b", 400, 14), color: C.muted, lineHeight: 1.7, maxWidth: 340, margin: "0 auto 20px" }}>Your testimony has been received. Your story is a weapon. Someone else's breakthrough may rest on the courage you showed in sharing it.</div><button onClick={() => { setOk(false); setF({ first: "", last: "", email: "", cat: "Breakthrough", title: "", story: "", faith: 3, share: false }); setAnon(false); }} style={{ ...ff("s", 600, 11), letterSpacing: 2, textTransform: "uppercase", padding: "10px 24px", background: "none", border: "1px solid " + C.gold, borderRadius: 8, color: C.gold, cursor: "pointer" }}>Share Another Testimony</button></div>;
- 
+
   return <div>
     <div style={{ marginBottom: 20 }}><label style={lbl}>Submission Type</label>
       <div onClick={() => setAnon(!anon)} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: C.white, border: "1px solid " + C.border, borderRadius: 8, padding: "12px 16px", cursor: "pointer" }}>
@@ -438,42 +496,42 @@ function TestimonyForm() {
         <div style={{ width: 38, height: 21, background: anon ? C.gold : "#ddd", borderRadius: 10, position: "relative", transition: "background 0.3s" }}><div style={{ position: "absolute", top: 3, left: anon ? 20 : 3, width: 15, height: 15, borderRadius: "50%", background: "#fff", transition: "left 0.3s" }} /></div>
       </div>
     </div>
- 
+
     {!anon && <><div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
       <div><label style={lbl}>First Name</label><input type="text" value={f.first} onChange={e => setF({ ...f, first: e.target.value })} placeholder="Your name" style={inp} /></div>
       <div><label style={lbl}>Last Name</label><input type="text" value={f.last} onChange={e => setF({ ...f, last: e.target.value })} placeholder="Last name" style={inp} /></div>
     </div>
     <div style={{ marginBottom: 16 }}><label style={lbl}>Email Address</label><input type="email" value={f.email} onChange={e => setF({ ...f, email: e.target.value })} placeholder="your@email.com" style={inp} /></div></>}
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Testimony Category</label>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
         {TEST_CATS.map(c => <button key={c.l} onClick={() => setF({ ...f, cat: c.l })} style={{ padding: "7px 14px", border: "1px solid " + (f.cat === c.l ? C.navy : C.border), borderRadius: 20, background: f.cat === c.l ? "rgba(26,31,58,0.1)" : "transparent", ...ff("s", 600, 11), letterSpacing: 1, color: f.cat === c.l ? C.navy : C.muted, cursor: "pointer", transition: "all 0.2s" }} dangerouslySetInnerHTML={{ __html: c.e + " " + c.l }} />)}
       </div>
     </div>
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Testimony Title</label><input type="text" value={f.title} onChange={e => setF({ ...f, title: e.target.value })} placeholder="Give your testimony a title..." style={inp} /></div>
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Your Testimony</label><textarea value={f.story} onChange={e => setF({ ...f, story: e.target.value })} placeholder="Share what God has done in your life. Your story may be the key to someone else's breakthrough..." maxLength={2000} style={{ ...inp, minHeight: 140, resize: "vertical" }} /><div style={{ ...ff("s", 400, 10), color: C.muted, textAlign: "right", marginTop: 4 }}>{f.story.length} / 2000</div></div>
- 
+
     <div style={{ marginBottom: 16 }}><label style={lbl}>Faith Level at the Time</label><div style={{ ...ff("s", 400, 12), color: C.muted, marginBottom: 8 }}>How were you trusting God when this happened?</div>
       <div style={{ display: "flex", gap: 8 }}>{[1, 2, 3, 4, 5].map(n => <span key={n} onClick={() => setF({ ...f, faith: n })} style={{ fontSize: 24, cursor: "pointer", color: n <= f.faith ? C.gold : C.border, transition: "color 0.2s, transform 0.15s", transform: n <= f.faith ? "scale(1.1)" : "scale(1)" }}>&#9876;</span>)}</div>
       <div style={{ ...ff("s", 500, 10), letterSpacing: 1.5, textTransform: "uppercase", color: C.muted, marginTop: 6 }}>{FAITH_LABELS[f.faith]}</div>
     </div>
- 
+
     <div style={{ marginBottom: 20 }}><label style={lbl}>Sharing</label>
       <div onClick={() => setF({ ...f, share: !f.share })} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: C.white, border: "1px solid " + C.border, borderRadius: 8, padding: "12px 16px", cursor: "pointer" }}>
         <span style={{ ...ff("s", 400, 13), color: C.text }}>{f.share ? "Share publicly to encourage others" : "Keep private (leaders only)"}</span>
         <div style={{ width: 38, height: 21, background: f.share ? C.gold : "#ddd", borderRadius: 10, position: "relative", transition: "background 0.3s" }}><div style={{ position: "absolute", top: 3, left: f.share ? 20 : 3, width: 15, height: 15, borderRadius: "50%", background: "#fff", transition: "left 0.3s" }} /></div>
       </div>
     </div>
- 
+
     <div style={verse}><div style={{ ...ff("d", 500, 14), fontStyle: "italic", color: C.navy, lineHeight: 1.75 }}>"And they overcame him by the blood of the Lamb and by the word of their testimony..."</div><div style={{ ...ff("s", 500, 11), color: C.gold, marginTop: 6 }}>Revelation 12:11 NKJV</div></div>
- 
+
     <button onClick={submit} disabled={sending} style={{ ...sub, opacity: sending ? 0.6 : 1 }}>{sending ? "Sending your testimony..." : "Submit My Testimony"}</button>
     <div style={{ ...ff("d", 400, 13), fontStyle: "italic", color: C.muted, textAlign: "center", marginTop: 12 }}>Your story is a weapon against the enemy.</div>
   </div>;
 }
- 
+
 // ══════════════════════════════════════════════════════════
 // LANDING PAGE
 // ══════════════════════════════════════════════════════════
@@ -487,7 +545,7 @@ function Landing({ onDay }) {
   const h2 = { ...ff("d", 600, 24), color: C.navy, marginBottom: 6 };
   const p = { ...ff("b", 400, 15), lineHeight: 1.85, color: C.sec, marginBottom: 20 };
   const h3 = { ...ff("d", 600, 20), color: C.navy, marginBottom: 8, marginTop: 28 };
- 
+
   return <div style={{ background: C.white, minHeight: "100vh" }}>
     <Bar />
     <div style={{ background: C.navy, padding: "48px 24px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
@@ -498,13 +556,13 @@ function Landing({ onDay }) {
       <div style={{ width: 60, height: 1, background: C.gold, margin: "0 auto 20px", opacity: 0.4, position: "relative" }} />
       <p style={{ ...ff("b", 400, 15), fontStyle: "italic", lineHeight: 1.7, color: "rgba(255,255,255,0.50)", maxWidth: 480, margin: "0 auto", position: "relative" }}>A 40-Day Devotional Journey</p>
     </div>
- 
+
     <div style={{ background: C.cream, padding: "14px 12px 0", borderBottom: "1px solid " + C.border }}>
       <div style={{ display: "flex", gap: 4, overflowX: "auto" }}>
         {tabs.map(t => <button key={t.id} onClick={() => setTab(t.id)} style={{ flex: "0 0 auto", padding: "10px 14px 12px", background: tab === t.id ? C.navy : "transparent", border: tab === t.id ? "1px solid " + C.navy : "1px solid " + C.border, borderBottom: tab === t.id ? "1px solid " + C.navy : "none", borderRadius: "8px 8px 0 0", cursor: "pointer", ...ff("s", tab === t.id ? 600 : 400, 10), letterSpacing: 1.2, textTransform: "uppercase", color: tab === t.id ? "#fff" : C.muted, transition: "all 0.2s", whiteSpace: "nowrap" }}>{t.l}</button>)}
       </div>
     </div>
- 
+
     <div style={{ padding: "0 20px 48px", maxWidth: 760, margin: "0 auto" }}>
       {tab === "days" && <><div style={{ ...ff("s", 500, 11), letterSpacing: 3, textTransform: "uppercase", color: C.gold, margin: "28px 0 20px", textAlign: "center" }}>Select a Day</div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 10 }}>
@@ -514,7 +572,7 @@ function Landing({ onDay }) {
             <div style={{ ...ff("d", 600, 14), lineHeight: 1.35, color: ih ? "#fff" : d.pub ? C.navy : C.muted, transition: "color 0.25s" }}>{d.title}</div>
           </button>; })}
         </div></>}
- 
+
       {tab === "about" && <div style={{ padding: "28px 8px 0" }}>
         <div style={h2}>About {S.name}</div><Orn s={{ marginBottom: 24 }} />
         <p style={p}>Adorned &amp; Armed is a Christ-centred movement birthed from a compelling two-fold vision: to raise a people who are beautifully clothed in righteousness, royalty, and honour, and fully equipped with the armour of God to influence every sphere of society.</p>
@@ -524,13 +582,13 @@ function Landing({ onDay }) {
         <div style={{ margin: "32px 0", padding: "28px 24px", background: C.cream, borderLeft: "3px solid " + C.gold, borderRadius: "0 8px 8px 0", textAlign: "center" }}><div style={{ ...ff("d", 600, 18), fontStyle: "italic", lineHeight: 1.6, color: C.navy }}>Adorned in Glory. Armed in Power. Sent with Purpose.</div></div>
         <div style={h3}>About {S.theme} {S.year}</div><p style={p}><strong style={{ color: C.navy }}>{S.theme} {S.year}</strong> is our 40-day devotional journey, an invitation to slow down, to draw near, and to make the Word of God your dwelling place.</p>
       </div>}
- 
+
       {tab === "prayer" && <div style={{ padding: "28px 8px 0" }}>
         <div style={h2}>Prayer Request</div><Orn s={{ marginBottom: 24 }} />
         <p style={p}>We believe in the power of united prayer. Whatever you are facing, whatever you are believing God for, you do not have to carry it alone. Share your request and let this community stand with you in faith.</p>
         <PrayerForm />
       </div>}
- 
+
       {tab === "testimony" && <div style={{ padding: "28px 8px 0" }}>
         <div style={h2}>Share Your Testimony</div><Orn s={{ marginBottom: 24 }} />
         <p style={p}>God is moving in this season. What has He done? What is He doing right now? Your testimony is not just your story; it is an encouragement to someone else who is still believing. It is a weapon against the enemy.</p>
@@ -540,7 +598,7 @@ function Landing({ onDay }) {
     <Ft /><Bar h={4} />
   </div>;
 }
- 
+
 // ── DAY PAGE ──
 function DayPg({ d, onBack, onNav }) {
   const ref = useRef(null);
@@ -549,7 +607,7 @@ function DayPg({ d, onBack, onNav }) {
   const next = DAYS.find(x => x.day > d.day);
   const ps = { ...ff("b", 400, 16), lineHeight: 1.85, color: C.text, marginBottom: 22, textAlign: "justify", hyphens: "auto" };
   const nb = { background: "none", border: "none", cursor: "pointer", ...ff("s", 400, 13), letterSpacing: 1, textTransform: "uppercase", color: C.gold };
- 
+
   return <div ref={ref} style={{ background: C.white, minHeight: "100vh" }}>
     <Bar /><Hd />
     <div style={{ padding: "44px 28px 36px", textAlign: "center", background: "linear-gradient(180deg, " + C.white + " 0%, " + C.cream + " 100%)", borderBottom: "1px solid " + C.border }}>
@@ -611,13 +669,13 @@ function DayPg({ d, onBack, onNav }) {
     <Ft /><Bar h={4} />
   </div>;
 }
- 
+
 // ── APP ──
 export default function App() {
   const [pg, setPg] = useState("land");
   const [sel, setSel] = useState(null);
   const dd = sel ? DAYS.find(d => d.day === sel) : null;
   const w = { maxWidth: 740, margin: "0 auto", boxShadow: "0 0 60px rgba(26,31,58,0.08)" };
- if (pg === "day" && dd) return <div style={w}><DayPg d={dd} onBack={() => { setPg("land"); setSel(null); }} onNav={d => setSel(d)} /><Analytics /></div>;
+  if (pg === "day" && dd) return <div style={w}><DayPg d={dd} onBack={() => { setPg("land"); setSel(null); }} onNav={d => setSel(d)} /><Analytics /></div>;
   return <div style={w}><Landing onDay={d => { setSel(d); setPg("day"); }} /><Analytics /></div>;
 }
