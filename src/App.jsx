@@ -732,6 +732,51 @@ const DAYS = [
     ],
     declaration: "I thank the Lord that His Word lives in me and sustains my life in Him. I choose to abide in Christ by allowing His Word to dwell richly in my heart each day. His Word is not distant or routine, it is living, active, and shaping who I become. I receive His Word as my daily bread, strengthening, guiding, and anchoring me in truth. As His Word abides in me, my thoughts are renewed, my desires are aligned, and my life is directed by Him. I remain in His Word, and through it, I remain in Him, bearing fruit that endures.",
   },
+  {
+    day: 14,
+    title: "Asking the Right Questions",
+    audioUrl: "/audio/day-14.mp3",
+    quotes: [
+      { text: "What we ask of God reveals what we believe about God.", author: "A. W. Tozer" },
+      { text: "The more the Word dwells in you, the more your prayers reflect the mind of Christ.", author: "Andrew Murray" },
+    ],
+    anchor: [
+      { text: "If you abide in Me, and My words abide in you, you will ask what you desire...", ref: "John 15:7 (NKJV)" },
+    ],
+    scriptures: ["John 15:7", "Luke 1:26-38", "Jeremiah 33:3"],
+    body: [
+      { t: "p", x: "As we continue in Jesus' words in John 15, we begin to notice a gentle progression. He speaks about abiding, then about His Word remaining in us, and then, almost quietly, He speaks about asking. This is not accidental. It shows us that life with Him is not meant to be silent, but relational. To abide in Christ is to enter into conversation with Him." },
+      { t: "p", x: "This may seem simple, but it changes how we see everything. Many of us have learned to approach the Word as something to read and understand. We observe, we reflect, and then we move on. But Scripture was never meant to be a one-way experience. It is an invitation into interaction, where God speaks and we respond, where truth is not only received but explored. One of the ways this interaction deepens is through the questions we ask." },
+      { t: "p", x: "What is remarkable is that throughout Scripture, God Himself asks questions. Not because He needs answers, but because we do. In Genesis 3:9, God calls out to Adam, 'Where are you?' He was not asking for information. He was drawing Adam into awareness. Adam was hiding, disconnected, unsure of himself, and the question invited him to stop and see his condition clearly. That same question still meets us today. Where are you in your walk with God, in your thoughts, in your trust?" },
+      { t: "p", x: "A few moments later, God asks, 'Who told you that you were naked?' This question goes deeper. It reveals the source of Adam's thinking and exposes the voice he had believed. We may hear that question differently in our own lives. Who told you that you are not enough? Who told you that you cannot change? Who told you that God is distant from you? God's questions are not casual. They are purposeful, bringing things to the surface that might otherwise remain hidden." },
+      { t: "p", x: "This pattern continues throughout Scripture. God asks, 'What is this you have done?' to awaken responsibility. He asks Jacob, 'What is your name?' to confront identity. He asks Jeremiah, 'What do you see?' to sharpen perception. Jesus asks His disciples, 'Who do you say that I am?' to lead them into personal revelation. In each moment, the question becomes a doorway, helping people see clearly, think differently, and step into something new." },
+      { t: "d" },
+      { t: "p", x: "This brings us back to how we approach the Word. If God speaks in ways that invite reflection, then we are meant to respond in the same spirit. We are not only called to read the Word, but to engage with it. We see this in Mary's response when she hears God's promise. She asks, 'How can this be?' She does not resist the Word. She leans into it, and as she does, more understanding is given to her." },
+      { t: "p", x: "We see this again when Jesus asks Philip, 'Where can we buy bread for all these people?' On the surface, it sounds like a simple question, but it is more than that. Jesus is inviting Philip to think beyond what he already knows. Philip immediately begins to calculate. He considers the cost, the crowd, and the limits of what is possible, and his answer reflects what he can see, not what God can do. Yet even in that moment, something important happens. The question reveals the limits of Philip's thinking, shows what he is relying on, and prepares the ground for Jesus to do something greater." },
+      { t: "p", x: "Sometimes, God asks questions not because we have the answer, but because the process of answering reveals where we are. This is why asking matters. The questions we bring to God's Word shape what we receive from it. When we read without asking, we often remain at the surface, but when we begin to ask, we start to engage. We notice more, understand more, and respond more deeply." },
+      { t: "d" },
+      { t: "p", x: "This is what Jesus is pointing to when He says, 'You will ask what you desire.' He is describing a life where His Word has settled so deeply within us that even our questions begin to change. Instead of only asking for outcomes, we begin to ask for understanding. Instead of asking only for answers, we begin to ask what God is showing us. Instead of focusing only on what we can see, we begin to look for what He is doing. And as our questions change, so does our experience of Him." },
+      { t: "p", x: "The Word becomes more than something we read. It becomes a place where we meet Him, where we listen and respond, where we speak and are guided. This is what it means to abide. It is not only remaining in His presence, but learning to converse with Him, staying long enough to ask, to listen, and to respond." },
+      { t: "p", x: "So as you come to His Word, do not rush through it. Stay with it. Ask simple, honest questions. What are You showing me? What does this mean for me today? Where am I in this? You may not always have immediate answers, and that is alright. The goal is not to get everything right. The goal is to remain engaged." },
+      { t: "p", x: "Because those who abide do not remain silent. They learn to ask, to listen, and to walk with God in an ongoing conversation. And in that conversation, the Word begins to open, understanding grows, and the life of God becomes clearer within us." },
+      { t: "d" },
+      { t: "p", x: "Lord, teach me to come to Your Word with a listening and responsive heart. Help me to ask with sincerity, to seek with openness, and to remain with You long enough to understand what You are saying. Shape my thoughts and my desires, and draw me into deeper conversation with You each day. Amen." },
+    ],
+    journal: [
+      "Do I approach God's Word as a task to complete or a conversation to enter?",
+      "What kind of questions do I usually bring to God, and what do they reveal about my perspective?",
+      "Where might God be inviting me to look deeper or think differently?",
+      "How can I become more intentional in engaging with Scripture through questions?",
+    ],
+    prayers: [
+      "Ask God to help you approach His Word with a heart that is open and engaged.",
+      "Pray for the grace to ask honest and meaningful questions as you read Scripture.",
+      "Ask the Holy Spirit to guide your thoughts and help you see beyond your current understanding.",
+      "Pray for discernment to recognize where your thinking needs to align with God's truth.",
+      "Ask God to draw you into deeper fellowship with Him through ongoing conversation in His Word.",
+    ],
+    declaration: "I choose to abide in Christ, allowing His Word to dwell within me and shape my thoughts and desires. I come to Him in conversation, ready to both speak and listen. I ask with sincerity and openness, trusting that He is guiding me into truth. I welcome the questions that reveal my heart and align me with His voice. I remain attentive, responsive, and willing to be shaped by what He shows me. As I abide in Him, my understanding deepens and my walk with Him grows.",
+  },
 ];
 
 const ALL = Array.from({ length: 40 }, (_, i) => { const n = i + 1; const f = DAYS.find(d => d.day === n); return { day: n, title: f ? f.title : "Coming Soon", pub: !!f }; });
