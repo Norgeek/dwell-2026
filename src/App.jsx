@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 // CONFIG: Set your Google Apps Script deployed web app URL here
 // after deploying the Code.gs as a web app.
 // ══════════════════════════════════════════════════════════
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxM66bZYNF6XWdTR5Hpf3Z51ziBaQVmJm5WromnCMFD47LGqaiSJmLV7osH2oEeQ1cHDw/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzFJjFmWS8XWqQBieQ9Z23_042xiRrS2-zh2VzTsdMhaHjh_Ic1lh3oHJYJXfI51dOzSQ/exec";
 
 const C = {
   navy: "#1a1f3a", gold: "#c8a45c", softGold: "#e8d5a3", cream: "#f5f0e3",
@@ -1780,140 +1780,6 @@ function FeedbackForm() {
 }
 
 // ══════════════════════════════════════════════════════════
-// DWELL BIBLE LANDING PAGE
-// ══════════════════════════════════════════════════════════
-function DwellPage() {
-  const subscribeUrl = "https://dwellapp.io/add_plan_to_cart?item_type=SubscriptionPlan&slug=dwell_annual_14trial&discount=4OPj1Fkf&utm_source=adorned_and_armed&utm_medium=community&utm_campaign=partnerships";
-  const btnStyle = { display: "inline-block", padding: "15px 36px", background: "linear-gradient(135deg, " + C.gold + ", #d4a84b)", borderRadius: 10, ...ff("s", 800, 13), color: "#fff", textDecoration: "none", letterSpacing: 1.5, textTransform: "uppercase", border: "none", cursor: "pointer", boxShadow: "0 4px 20px rgba(200,164,92,0.35)" };
-
-  const features = [
-    { title: "20+ Voices and Bible Versions", desc: "All your favorite translations, read by people who love the Bible as much as you do." },
-    { title: "Soundtrack Your Scripture", desc: "Explore musical backdrops like Ambient, Piano, or Hymns, or soothing sounds such as Rain and Gentle Breeze. Tailor your Bible listening experience to fit your mood or setting perfectly." },
-    { title: "Make Your Own Mix", desc: "Effortlessly control narration speed and music levels to personalize your listening experience." },
-    { title: "Daily Devotional", desc: "Daily biblical reflections and spiritual practices from trusted voices that guide you deeper in your life with Christ." },
-    { title: "Read Along", desc: "See and hear the Bible like never before with Dwell\u2019s Read Along experience. Follow the text of Scripture as it scrolls down the screen, synchronized to the narrator\u2019s voice." },
-    { title: "Sleep Timer", desc: "Doze off to the word of God being read over you using Dwell. In addition to our extensive library of sleep content, you can choose to set a sleep timer from any duration, ensuring Dwell not only gets you to sleep but helps you stay there." },
-    { title: "Repeat", desc: "Activate the Repeat feature to hear verses over and over again, embedding scripture in your heart and mind." },
-    { title: "Reflect", desc: "Turn on the Reflect feature to add time between each reading of scripture, creating a meditative experience that deepens your connection with God." },
-  ];
-
-  const benefits = [
-    { title: "Fits Your Active Lifestyle", desc: "When reading time is hard to find, Dwell provides the perfect solution, allowing you to listen to the Bible whenever you choose." },
-    { title: "Personalize Your Listening Experience", desc: "Tailor your Dwell experience by choosing your preferred voice, version, background music, and even adjusting the speed to suit your listening style." },
-    { title: "Overcome Bible Reading Guilt", desc: "Move past the guilt of not reading the Bible by finding joy in God\u2019s presence as you listen to it." },
-    { title: "Transform Routines Into Growth Moments", desc: "Whether you\u2019re commuting, exercising, or just doing stuff around the house, turn your routines into opportunities for spiritual growth." },
-  ];
-
-  const library = [
-    "Guided Daily Devotionals",
-    "Guided Sleep to Scripture Experiences",
-    "Daily Listening Plans",
-    "Playlists on Biblical Themes",
-  ];
-
-  return <div>
-    {/* Hero */}
-    <div style={{ background: "linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%)", padding: "40px 24px 36px", textAlign: "center", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: "20%", left: "50%", transform: "translateX(-50%)", width: 300, height: 300, background: "radial-gradient(circle, rgba(200,164,92,0.12) 0%, transparent 70%)", pointerEvents: "none" }} />
-      <div style={{ ...ff("d", 400, 20), color: C.softGold, marginBottom: 14, position: "relative", fontStyle: "italic", lineHeight: 1.5 }}>Discover the Transformative Power<br/>of Listening to the Bible</div>
-      <div style={{ ...ff("s", 400, 14), color: "rgba(255,255,255,0.7)", marginBottom: 20, position: "relative" }}>Listen to God's Word anytime, anywhere with a yearly subscription to Dwell.</div>
-      <div style={{ display: "flex", justifyContent: "center", gap: 20, marginBottom: 22, position: "relative" }}>
-        <div style={{ ...ff("s", 700, 12), color: C.gold }}>&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-      </div>
-      <div style={{ display: "flex", justifyContent: "center", gap: 20, marginBottom: 22, position: "relative" }}>
-        <div style={{ ...ff("s", 600, 12), color: C.gold }}>94K Ratings</div>
-        <div style={{ ...ff("s", 600, 12), color: C.gold }}>3M Installs</div>
-      </div>
-      <a href={subscribeUrl} target="_blank" rel="noopener noreferrer" style={btnStyle}>Get Dwell Now</a>
-    </div>
-
-    {/* Community greeting */}
-    <div style={{ padding: "22px 24px", background: C.cream, textAlign: "center", borderBottom: "1px solid " + C.border }}>
-      <div style={{ ...ff("s", 400, 15), color: C.navy, lineHeight: 1.7 }}>&#128075; Greetings, <strong style={{ fontStyle: "italic" }}>{S.name}</strong> community! Claim your free trial today! &#127881;</div>
-    </div>
-
-    {/* Scripture Library */}
-    <div style={{ padding: "32px 20px" }}>
-      <div style={{ textAlign: "center", marginBottom: 6 }}><div style={{ ...ff("d", 600, 20), color: C.navy, fontStyle: "italic" }}>Explore the Depths of Dwell's Scripture Library</div></div>
-      <div style={{ textAlign: "center", marginBottom: 24 }}><div style={{ ...ff("s", 400, 13), color: C.sec, lineHeight: 1.7, maxWidth: 500, margin: "0 auto" }}>Immerse yourself in guided devotionals, restorative sleep experiences, daily listening plans to deepen your connection with God</div></div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-        {library.map((item, i) => <div key={i} style={{ padding: "18px 14px", background: C.white, borderRadius: 10, border: "1px solid " + C.border, textAlign: "center" }}>
-          <div style={{ ...ff("s", 600, 12), color: C.navy, lineHeight: 1.45 }}>{item}</div>
-        </div>)}
-      </div>
-    </div>
-
-    {/* Matt Chandler quote */}
-    <div style={{ padding: "24px 24px", background: C.navy, textAlign: "center" }}>
-      <div style={{ ...ff("d", 400, 16), color: C.softGold, lineHeight: 1.75, fontStyle: "italic", maxWidth: 500, margin: "0 auto" }}>"If you're not a good reader, there are so many tools available to you to soak in the word of God. One of my favorites is Dwell."</div>
-      <div style={{ marginTop: 14 }}>
-        <div style={{ ...ff("s", 700, 12), color: C.gold, letterSpacing: 1.5 }}>Matt Chandler</div>
-        <div style={{ ...ff("s", 400, 11), color: "rgba(255,255,255,0.5)", fontStyle: "italic", marginTop: 2 }}>Lead Pastor of Village Church</div>
-      </div>
-    </div>
-
-    {/* God's Word Read Over You */}
-    <div style={{ padding: "24px 24px", background: C.cream, textAlign: "center", borderBottom: "1px solid " + C.border }}>
-      <div style={{ ...ff("s", 400, 13), color: C.sec, fontStyle: "italic", marginBottom: 8 }}>Get access to the finest listening experience for the Bible, with 14 different voices and 9 different versions to-date. Dwell is always adding more!</div>
-      <div style={{ ...ff("d", 600, 20), color: C.navy }}>God's Word Read Over You</div>
-    </div>
-
-    {/* Personalize section - features */}
-    <div style={{ padding: "32px 20px" }}>
-      <div style={{ textAlign: "center", marginBottom: 6 }}><div style={{ ...ff("d", 600, 20), color: C.navy, fontStyle: "italic" }}>Personalize Your Listening Experience</div></div>
-      <div style={{ textAlign: "center", marginBottom: 24 }}><div style={{ ...ff("s", 400, 13), color: C.sec }}>Choose voices, soundtracks, personal mixes, daily devotionals, sleep timer and more</div></div>
-      {features.map((ft, i) => <div key={i} style={{ padding: "16px 18px", background: i % 2 === 0 ? C.white : C.cream, borderRadius: 10, border: "1px solid " + C.border, marginBottom: 10 }}>
-        <div style={{ ...ff("s", 700, 13), color: C.navy, marginBottom: 5 }}>{ft.title}</div>
-        <div style={{ ...ff("s", 400, 12), color: C.sec, lineHeight: 1.65 }}>{ft.desc}</div>
-      </div>)}
-    </div>
-
-    {/* Experience Dwell Anywhere */}
-    <div style={{ padding: "20px 24px", background: C.navy, textAlign: "center" }}>
-      <div style={{ ...ff("s", 700, 12), color: C.gold, letterSpacing: 2, textTransform: "uppercase" }}>Experience Dwell Anywhere, Even on CarPlay</div>
-    </div>
-
-    {/* Benefits */}
-    <div style={{ padding: "32px 20px" }}>
-      <div style={{ textAlign: "center", marginBottom: 6 }}><div style={{ ...ff("d", 600, 20), color: C.navy, fontStyle: "italic" }}>Hear God's Word, Feel His Presence</div></div>
-      <div style={{ textAlign: "center", marginBottom: 24 }}><div style={{ ...ff("s", 400, 13), color: C.sec }}>Choose your voice, set your pace, and let every word draw you closer to God</div></div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-        {benefits.map((b, i) => <div key={i} style={{ padding: "18px 14px", background: C.white, borderRadius: 10, border: "1px solid " + C.border }}>
-          <div style={{ ...ff("s", 700, 12), color: C.navy, marginBottom: 6, lineHeight: 1.35 }}>{b.title}</div>
-          <div style={{ ...ff("s", 400, 11), color: C.sec, lineHeight: 1.6 }}>{b.desc}</div>
-        </div>)}
-      </div>
-    </div>
-
-    <Orn s={{ padding: "8px 0" }} />
-
-    {/* When Reading Isn't an Option */}
-    <div style={{ padding: "8px 24px 20px", textAlign: "center" }}>
-      <div style={{ ...ff("s", 500, 11), color: C.muted, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Experience the calming voices and beautiful design of Dwell</div>
-      <div style={{ ...ff("d", 600, 22), color: C.navy, fontStyle: "italic", lineHeight: 1.35 }}>When Reading the Bible Isn't an Option, Listening Is</div>
-    </div>
-
-    {/* CTA - The actual offer */}
-    <div style={{ padding: "28px 20px 32px" }}>
-      <div style={{ background: "linear-gradient(135deg, " + C.navy + ", #12162d)", borderRadius: 14, padding: "30px 24px", textAlign: "center", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: 14, right: -28, background: "#e74c3c", color: "#fff", ...ff("s", 800, 10), padding: "4px 38px", transform: "rotate(45deg)", letterSpacing: 1 }}>40% OFF</div>
-        <div style={{ ...ff("d", 700, 28), color: C.softGold, marginBottom: 6 }}>Get Your Limited-Time Discount Now</div>
-        <div style={{ ...ff("s", 700, 13), color: C.gold, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 16 }}>14-Day Free Trial</div>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
-          <span style={{ ...ff("s", 400, 14), color: "rgba(255,255,255,0.5)" }}>$0 now, then</span>
-          <span style={{ ...ff("d", 400, 18), color: C.muted, textDecoration: "line-through" }}>$59.99</span>
-          <span style={{ ...ff("d", 700, 30), color: C.softGold }}>$35.99</span>
-          <span style={{ ...ff("s", 400, 13), color: "rgba(255,255,255,0.5)" }}>/year</span>
-        </div>
-        <div style={{ marginTop: 18 }}>
-          <a href={subscribeUrl} target="_blank" rel="noopener noreferrer" style={btnStyle}>Subscribe</a>
-        </div>
-      </div>
-    </div>
-  </div>;
-}
-
-// ══════════════════════════════════════════════════════════
 // LANDING PAGE
 // ══════════════════════════════════════════════════════════
 function Landing({ onDay }) {
@@ -1941,7 +1807,7 @@ function Landing({ onDay }) {
 
     <div style={{ background: C.cream, padding: "14px 12px 0", borderBottom: "1px solid " + C.border }}>
       <div style={{ display: "flex", gap: 4, overflowX: "auto" }}>
-        {tabs.map(t => <button key={t.id} onClick={() => setTab(t.id)} style={{ flex: "0 0 auto", padding: "10px 14px 12px", background: tab === t.id ? C.navy : "transparent", border: tab === t.id ? "1px solid " + C.navy : "1px solid " + C.border, borderBottom: tab === t.id ? "1px solid " + C.navy : "none", borderRadius: "8px 8px 0 0", cursor: "pointer", ...ff("s", tab === t.id ? 600 : 400, 10), letterSpacing: 1.2, textTransform: "uppercase", color: tab === t.id ? "#fff" : C.muted, transition: "all 0.2s", whiteSpace: "nowrap" }}>{t.l}</button>)}
+        {tabs.map(t => <button key={t.id} onClick={() => { if (t.id === "dwell") { window.open("https://get.dwellbible.com/aa/?utm_campaign=partnerships&utm_content=&utm_medium=podcast&utm_source=adorned_and_armed&utm_term=", "_blank"); return; } setTab(t.id); }} style={{ flex: "0 0 auto", padding: "10px 14px 12px", background: tab === t.id ? C.navy : "transparent", border: tab === t.id ? "1px solid " + C.navy : "1px solid " + C.border, borderBottom: tab === t.id ? "1px solid " + C.navy : "none", borderRadius: "8px 8px 0 0", cursor: "pointer", ...ff("s", tab === t.id ? 600 : 400, 10), letterSpacing: 1.2, textTransform: "uppercase", color: tab === t.id ? "#fff" : C.muted, transition: "all 0.2s", whiteSpace: "nowrap" }}>{t.id === "dwell" ? <>{t.l} <span style={{ fontSize: 9, verticalAlign: "middle", opacity: 0.6 }}>&#8599;</span></> : t.l}</button>)}
       </div>
     </div>
 
@@ -1975,10 +1841,6 @@ function Landing({ onDay }) {
         <div style={h2}>Share Your Testimony</div><Orn s={{ marginBottom: 24 }} />
         <p style={p}>God is moving in this season. What has He done? What is He doing right now? Your testimony is not just your story; it is an encouragement to someone else who is still believing. It is a weapon against the enemy.</p>
         <TestimonyForm />
-      </div>}
-
-      {tab === "dwell" && <div style={{ padding: "0" }}>
-        <DwellPage />
       </div>}
 
       {tab === "feedback" && <div style={{ padding: "28px 8px 0" }}>
