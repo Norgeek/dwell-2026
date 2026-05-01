@@ -1993,74 +1993,125 @@ function FeedbackForm() {
 // ══════════════════════════════════════════════════════════
 // LANDING PAGE
 // ══════════════════════════════════════════════════════════
-function Landing({ onDay }) {
-  const [tab, setTab] = useState("days");
-  const [hov, setHov] = useState(null);
+
+// ── SHARED HERO + TABS ──
+function HeroAndTabs({ tab, setTab }) {
   const tabs = [
-    { id: "days", l: "Devotionals" }, { id: "about", l: "About Us" },
+    { id: "welcome", l: "Welcome" }, { id: "days", l: "Devotionals" }, { id: "about", l: "About Us" },
     { id: "prayer", l: "Prayer Request" }, { id: "testimony", l: "Share Testimony" },
     { id: "dwell", l: "Dwell Bible" }, { id: "feedback", l: "Feedback" },
   ];
-  const h2 = { ...ff("d", 600, 24), color: C.navy, marginBottom: 6 };
-  const p = { ...ff("b", 400, 15), lineHeight: 1.85, color: C.sec, marginBottom: 20 };
-  const h3 = { ...ff("d", 600, 20), color: C.navy, marginBottom: 8, marginTop: 28 };
-
-  return <div style={{ background: C.white, minHeight: "100vh" }}>
+  return <>
     <Bar />
-    <div style={{ background: C.navy, padding: "48px 24px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+    <div style={{ background: C.navy, padding: "40px 24px 34px", textAlign: "center", position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 30%, rgba(200,164,92,0.1) 0%, transparent 70%)", pointerEvents: "none" }} />
-      <div style={{ ...ff("s", 300, 12), letterSpacing: 4, textTransform: "uppercase", color: C.gold, marginBottom: 14, position: "relative", opacity: 0.85 }}>{S.name}</div>
-      <h1 style={{ ...ff("d", 700, "clamp(42px,8vw,64px)"), lineHeight: 1.05, color: "#fff", marginBottom: 6, position: "relative", letterSpacing: 3, textTransform: "uppercase" }}>{S.theme}</h1>
-      <div style={{ ...ff("s", 400, 16), letterSpacing: 6, textTransform: "uppercase", color: C.softGold, marginBottom: 22, position: "relative" }}>{S.year}</div>
-      <div style={{ width: 60, height: 1, background: C.gold, margin: "0 auto 20px", opacity: 0.4, position: "relative" }} />
-      <p style={{ ...ff("b", 400, 15), fontStyle: "italic", lineHeight: 1.7, color: "rgba(255,255,255,0.50)", maxWidth: 480, margin: "0 auto", position: "relative" }}>A 40-Day Devotional Journey</p>
+      <div style={{ ...ff("s", 300, 12), letterSpacing: 4, textTransform: "uppercase", color: C.gold, marginBottom: 12, position: "relative", opacity: 0.85 }}>{S.name}</div>
+      <h1 style={{ ...ff("d", 700, "clamp(36px,7vw,56px)"), lineHeight: 1.05, color: "#fff", marginBottom: 4, position: "relative", letterSpacing: 3, textTransform: "uppercase", cursor: "pointer" }} onClick={() => setTab("welcome")}>{S.theme}</h1>
+      <div style={{ ...ff("s", 400, 14), letterSpacing: 5, textTransform: "uppercase", color: C.softGold, marginBottom: 16, position: "relative" }}>{S.year}</div>
+      <div style={{ width: 50, height: 1, background: C.gold, margin: "0 auto", opacity: 0.4, position: "relative" }} />
     </div>
-
-    <div style={{ background: C.cream, padding: "14px 12px 0", borderBottom: "1px solid " + C.border }}>
+    <div style={{ background: C.cream, padding: "14px 12px 0", borderBottom: "1px solid " + C.border, position: "sticky", top: 0, zIndex: 10 }}>
       <div style={{ display: "flex", gap: 4, overflowX: "auto" }}>
         {tabs.map(t => <button key={t.id} onClick={() => { if (t.id === "dwell") { window.open("https://get.dwellbible.com/aa/?utm_campaign=partnerships&utm_content=&utm_medium=podcast&utm_source=adorned_and_armed&utm_term=", "_blank"); return; } setTab(t.id); }} style={{ flex: "0 0 auto", padding: "10px 14px 12px", background: tab === t.id ? C.navy : "transparent", border: tab === t.id ? "1px solid " + C.navy : "1px solid " + C.border, borderBottom: tab === t.id ? "1px solid " + C.navy : "none", borderRadius: "8px 8px 0 0", cursor: "pointer", ...ff("s", tab === t.id ? 600 : 400, 10), letterSpacing: 1.2, textTransform: "uppercase", color: tab === t.id ? "#fff" : C.muted, transition: "all 0.2s", whiteSpace: "nowrap" }}>{t.id === "dwell" ? <>{t.l} <span style={{ fontSize: 9, verticalAlign: "middle", opacity: 0.6 }}>&#8599;</span></> : t.l}</button>)}
       </div>
     </div>
+  </>;
+}
 
-    <div style={{ padding: "0 20px 48px", maxWidth: 760, margin: "0 auto" }}>
-      {tab === "days" && <><div style={{ ...ff("s", 500, 11), letterSpacing: 3, textTransform: "uppercase", color: C.gold, margin: "28px 0 20px", textAlign: "center" }}>Select a Day</div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 10 }}>
-          {ALL.map(d => { const ih = hov === d.day && d.pub; return <button key={d.day} onClick={() => d.pub && onDay(d.day)} onMouseEnter={() => setHov(d.day)} onMouseLeave={() => setHov(null)} style={{ display: "block", width: "100%", padding: "18px 14px", textAlign: "left", background: ih ? C.navy : C.cream, border: "1px " + (d.pub ? "solid" : "dashed") + " " + (ih ? C.navy : C.border), borderRadius: 8, cursor: d.pub ? "pointer" : "default", opacity: d.pub ? 1 : 0.35, transform: ih ? "translateY(-2px)" : "none", boxShadow: ih ? "0 8px 24px rgba(26,31,58,0.15)" : "none", transition: "all 0.25s", position: "relative" }}>
-            {!d.pub && <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={C.muted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", top: 10, right: 10, opacity: 0.5 }}><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>}
-            <div style={{ ...ff("s", 500, 10), letterSpacing: 2.5, textTransform: "uppercase", color: C.gold, marginBottom: 5 }}>Day {String(d.day).padStart(2, "0")}</div>
-            <div style={{ ...ff("d", 600, 14), lineHeight: 1.35, color: ih ? "#fff" : d.pub ? C.navy : C.muted, transition: "color 0.25s" }}>{d.title}</div>
-          </button>; })}
-        </div></>}
+// ── DAY NAVIGATION BAR ──
+function DayNav({ d, onBack, onNav }) {
+  const prev = DAYS.slice().reverse().find(x => x.day < d.day);
+  const next = DAYS.find(x => x.day > d.day);
+  const nb = { background: "none", border: "none", cursor: "pointer", ...ff("s", 400, 13), letterSpacing: 1, textTransform: "uppercase", color: C.gold };
+  return <div style={{ padding: "14px 28px", display: "flex", justifyContent: "space-between", alignItems: "center", background: C.cream, borderTop: "1px solid " + C.border, borderBottom: "1px solid " + C.border }}>
+    {prev ? <button onClick={() => onNav(prev.day)} style={nb}>&larr; Day {String(prev.day).padStart(2, "0")}</button> : <div />}
+    <button onClick={onBack} style={nb}>All Days</button>
+    {next ? <button onClick={() => onNav(next.day)} style={nb}>Day {String(next.day).padStart(2, "0")} &rarr;</button> : <div />}
+  </div>;
+}
 
-      {tab === "about" && <div style={{ padding: "28px 8px 0" }}>
-        <div style={h2}>About {S.name}</div><Orn s={{ marginBottom: 24 }} />
-        <p style={p}>Adorned &amp; Armed is a Christ-centred movement birthed from a compelling two-fold vision: to raise a people who are beautifully clothed in righteousness, royalty, and honour, and fully equipped with the armour of God to influence every sphere of society.</p>
-        <p style={p}>We are passionate about cultivating lives that reflect the splendour of the love of Jesus, lives that do not merely profess faith, but visibly demonstrate His power, presence, and authority.</p>
-        <div style={h3}>Our Story</div><p style={p}>Commissioned in 2024, Adorned &amp; Armed began as a focused call to women intercessors. Since then, it has grown into a vibrant, global movement, drawing believers from all walks of life who share a deep hunger for God.</p>
-        <div style={h3}>Prayer &amp; Fasting Challenges</div><p style={p}>At the heart of our ministry are our annual Prayer &amp; Fasting Challenges, sacred, transformative gatherings designed to stir spiritual awakening, deepen intimacy with God, and ignite lives of purpose and power.</p>
-        <div style={{ margin: "32px 0", padding: "28px 24px", background: C.cream, borderLeft: "3px solid " + C.gold, borderRadius: "0 8px 8px 0", textAlign: "center" }}><div style={{ ...ff("d", 600, 18), fontStyle: "italic", lineHeight: 1.6, color: C.navy }}>Adorned in Glory. Armed in Power. Sent with Purpose.</div></div>
-        <div style={h3}>About {S.theme} {S.year}</div><p style={p}><strong style={{ color: C.navy }}>{S.theme} {S.year}</strong> is our 40-day devotional journey, an invitation to slow down, to draw near, and to make the Word of God your dwelling place.</p>
-      </div>}
-
-      {tab === "prayer" && <div style={{ padding: "28px 8px 0" }}>
-        <div style={h2}>Prayer Request</div><Orn s={{ marginBottom: 24 }} />
-        <p style={p}>We believe in the power of united prayer. Whatever you are facing, whatever you are believing God for, you do not have to carry it alone. Share your request and let this community stand with you in faith.</p>
-        <PrayerForm />
-      </div>}
-
-      {tab === "testimony" && <div style={{ padding: "28px 8px 0" }}>
-        <div style={h2}>Share Your Testimony</div><Orn s={{ marginBottom: 24 }} />
-        <p style={p}>God is moving in this season. What has He done? What is He doing right now? Your testimony is not just your story; it is an encouragement to someone else who is still believing. It is a weapon against the enemy.</p>
-        <TestimonyForm />
-      </div>}
-
-      {tab === "feedback" && <div style={{ padding: "28px 8px 0" }}>
-        <div style={h2}>Share Your Feedback</div><Orn s={{ marginBottom: 24 }} />
-        <p style={p}>Help us grow. Your honest feedback shapes how we serve this community. Whether it is about the devotional content, the website experience, or ideas for the future, we want to hear from you.</p>
-        <FeedbackForm />
-      </div>}
+// ── WELCOME PAGE ──
+function WelcomePage({ onStart }) {
+  const p = { ...ff("b", 400, 15), lineHeight: 1.85, color: C.sec, marginBottom: 18 };
+  const h3 = { ...ff("d", 600, 19), color: C.navy, marginBottom: 8, marginTop: 24 };
+  return <div style={{ padding: "28px 24px 40px" }}>
+    <div style={{ ...ff("d", 600, 26), color: C.navy, marginBottom: 6 }}>Welcome to {S.theme} {S.year}</div>
+    <Orn s={{ marginBottom: 24 }} />
+    <p style={p}>We are so glad you are here. <strong style={{ color: C.navy }}>{S.theme} {S.year}</strong> is a 40-day devotional journey produced by <strong style={{ color: C.navy }}>{S.name}</strong>, an invitation to slow down, draw near, and make the Word of God your dwelling place.</p>
+    <p style={p}>Over the course of forty days, each devotional will guide you through Scripture, reflection, prayer, and journaling as you deepen your fellowship with God.</p>
+    <div style={h3}>How to Navigate This Site</div>
+    <p style={p}>Use the tabs at the top of the page to move between sections. Here is what each one offers:</p>
+    <div style={{ padding: "16px 18px", background: C.cream, borderRadius: 8, marginBottom: 16 }}>
+      {[
+        { t: "Devotionals", d: "Access each day's bulletin. Click on any unlocked day to read the devotional, listen to the audio, and reflect on the journal questions and prayers." },
+        { t: "About Us", d: "Learn about the Adorned & Armed ministry and the vision behind this journey." },
+        { t: "Prayer Request", d: "Submit a prayer request. Our intercessors will stand with you in faith." },
+        { t: "Share Testimony", d: "Share what God is doing in your life to encourage others." },
+        { t: "Dwell Bible", d: "Access the Dwell Bible app for an immersive audio Bible experience." },
+        { t: "Feedback", d: "Share your thoughts and suggestions to help us improve." },
+      ].map((item, i) => <div key={i} style={{ padding: "10px 0", borderBottom: i < 5 ? "1px solid rgba(200,164,92,0.15)" : "none" }}>
+        <span style={{ ...ff("s", 600, 12), color: C.gold, textTransform: "uppercase", letterSpacing: 1 }}>{item.t}</span>
+        <div style={{ ...ff("b", 400, 14), color: C.sec, marginTop: 4, lineHeight: 1.6 }}>{item.d}</div>
+      </div>)}
     </div>
-    <Ft /><Bar h={4} />
+    <div style={h3}>A Few Tips</div>
+    <p style={p}>Each devotional includes an audio version you can listen to on the go. Take your time with each day. Bring your Bible and a journal. Let the Holy Spirit speak to you through the Word.</p>
+    <p style={p}>New devotionals are released daily. Bookmark this page and return each day for the next bulletin.</p>
+    <div style={{ margin: "28px 0", padding: "24px 20px", background: C.cream, borderLeft: "3px solid " + C.gold, borderRadius: "0 8px 8px 0", textAlign: "center" }}>
+      <div style={{ ...ff("d", 600, 17), fontStyle: "italic", lineHeight: 1.6, color: C.navy }}>Adorned in Glory. Armed in Power. Sent with Purpose.</div>
+    </div>
+    <div style={{ textAlign: "center", marginTop: 28 }}>
+      <button onClick={onStart} style={{ padding: "14px 36px", background: C.navy, color: C.gold, border: "none", borderRadius: 10, ...ff("s", 700, 12), letterSpacing: 2, textTransform: "uppercase", cursor: "pointer" }}>Begin the Journey &rarr;</button>
+    </div>
+  </div>;
+}
+
+// ── LANDING CONTENT ──
+function LandingContent({ tab, setTab, onDay }) {
+  const [hov, setHov] = useState(null);
+  const h2 = { ...ff("d", 600, 24), color: C.navy, marginBottom: 6 };
+  const p = { ...ff("b", 400, 15), lineHeight: 1.85, color: C.sec, marginBottom: 20 };
+  const h3 = { ...ff("d", 600, 20), color: C.navy, marginBottom: 8, marginTop: 28 };
+
+  return <div style={{ padding: "0 20px 48px", maxWidth: 760, margin: "0 auto" }}>
+    {tab === "welcome" && <WelcomePage onStart={() => setTab("days")} />}
+
+    {tab === "days" && <><div style={{ ...ff("s", 500, 11), letterSpacing: 3, textTransform: "uppercase", color: C.gold, margin: "28px 0 20px", textAlign: "center" }}>Select a Day</div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 10 }}>
+        {ALL.map(d => { const ih = hov === d.day && d.pub; return <button key={d.day} onClick={() => d.pub && onDay(d.day)} onMouseEnter={() => setHov(d.day)} onMouseLeave={() => setHov(null)} style={{ display: "block", width: "100%", padding: "18px 14px", textAlign: "left", background: ih ? C.navy : C.cream, border: "1px " + (d.pub ? "solid" : "dashed") + " " + (ih ? C.navy : C.border), borderRadius: 8, cursor: d.pub ? "pointer" : "default", opacity: d.pub ? 1 : 0.35, transform: ih ? "translateY(-2px)" : "none", boxShadow: ih ? "0 8px 24px rgba(26,31,58,0.15)" : "none", transition: "all 0.25s", position: "relative" }}>
+          {!d.pub && <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={C.muted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "absolute", top: 10, right: 10, opacity: 0.5 }}><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>}
+          <div style={{ ...ff("s", 500, 10), letterSpacing: 2.5, textTransform: "uppercase", color: C.gold, marginBottom: 5 }}>Day {String(d.day).padStart(2, "0")}</div>
+          <div style={{ ...ff("d", 600, 14), lineHeight: 1.35, color: ih ? "#fff" : d.pub ? C.navy : C.muted, transition: "color 0.25s" }}>{d.title}</div>
+        </button>; })}
+      </div></>}
+
+    {tab === "about" && <div style={{ padding: "28px 8px 0" }}>
+      <div style={h2}>About {S.name}</div><Orn s={{ marginBottom: 24 }} />
+      <p style={p}>Adorned &amp; Armed is a Christ-centred movement birthed from a compelling two-fold vision: to raise a people who are beautifully clothed in righteousness, royalty, and honour, and fully equipped with the armour of God to influence every sphere of society.</p>
+      <p style={p}>We are passionate about cultivating lives that reflect the splendour of the love of Jesus, lives that do not merely profess faith, but visibly demonstrate His power, presence, and authority.</p>
+      <div style={h3}>Our Story</div><p style={p}>Commissioned in 2024, Adorned &amp; Armed began as a focused call to women intercessors. Since then, it has grown into a vibrant, global movement, drawing believers from all walks of life who share a deep hunger for God.</p>
+      <div style={h3}>Prayer &amp; Fasting Challenges</div><p style={p}>At the heart of our ministry are our annual Prayer &amp; Fasting Challenges, sacred, transformative gatherings designed to stir spiritual awakening, deepen intimacy with God, and ignite lives of purpose and power.</p>
+      <div style={{ margin: "32px 0", padding: "28px 24px", background: C.cream, borderLeft: "3px solid " + C.gold, borderRadius: "0 8px 8px 0", textAlign: "center" }}><div style={{ ...ff("d", 600, 18), fontStyle: "italic", lineHeight: 1.6, color: C.navy }}>Adorned in Glory. Armed in Power. Sent with Purpose.</div></div>
+      <div style={h3}>About {S.theme} {S.year}</div><p style={p}><strong style={{ color: C.navy }}>{S.theme} {S.year}</strong> is our 40-day devotional journey, an invitation to slow down, to draw near, and to make the Word of God your dwelling place.</p>
+    </div>}
+
+    {tab === "prayer" && <div style={{ padding: "28px 8px 0" }}>
+      <div style={h2}>Prayer Request</div><Orn s={{ marginBottom: 24 }} />
+      <p style={p}>We believe in the power of united prayer. Whatever you are facing, whatever you are believing God for, you do not have to carry it alone. Share your request and let this community stand with you in faith.</p>
+      <PrayerForm />
+    </div>}
+
+    {tab === "testimony" && <div style={{ padding: "28px 8px 0" }}>
+      <div style={h2}>Share Your Testimony</div><Orn s={{ marginBottom: 24 }} />
+      <p style={p}>God is moving in this season. What has He done? What is He doing right now? Your testimony is not just your story; it is an encouragement to someone else who is still believing. It is a weapon against the enemy.</p>
+      <TestimonyForm />
+    </div>}
+
+    {tab === "feedback" && <div style={{ padding: "28px 8px 0" }}>
+      <div style={h2}>Share Your Feedback</div><Orn s={{ marginBottom: 24 }} />
+      <p style={p}>Your feedback helps us serve you better. Whether it is about the devotionals, the app, or anything else, we value your thoughts and suggestions.</p>
+      <FeedbackForm />
+    </div>}
   </div>;
 }
 
@@ -2068,13 +2119,10 @@ function Landing({ onDay }) {
 function DayPg({ d, onBack, onNav }) {
   const ref = useRef(null);
   useEffect(() => { ref.current?.scrollIntoView({ behavior: "smooth" }); }, [d.day]);
-  const prev = DAYS.slice().reverse().find(x => x.day < d.day);
-  const next = DAYS.find(x => x.day > d.day);
   const ps = { ...ff("b", 400, 16), lineHeight: 1.85, color: C.text, marginBottom: 22, textAlign: "justify", hyphens: "auto" };
-  const nb = { background: "none", border: "none", cursor: "pointer", ...ff("s", 400, 13), letterSpacing: 1, textTransform: "uppercase", color: C.gold };
 
-  return <div ref={ref} style={{ background: C.white, minHeight: "100vh" }}>
-    <Bar /><Hd />
+  return <div ref={ref}>
+    <DayNav d={d} onBack={onBack} onNav={onNav} />
     <div style={{ padding: "44px 28px 36px", textAlign: "center", background: "linear-gradient(180deg, " + C.white + " 0%, " + C.cream + " 100%)", borderBottom: "1px solid " + C.border }}>
       <div style={{ ...ff("s", 500, 12), letterSpacing: 3.5, textTransform: "uppercase", color: C.gold, marginBottom: 12 }}>Day {String(d.day).padStart(2, "0")}</div>
       <h1 style={{ ...ff("d", 700, "clamp(28px,5vw,40px)"), lineHeight: 1.2, color: C.navy, marginBottom: 20 }}>{d.title}</h1><Orn />
@@ -2122,25 +2170,32 @@ function DayPg({ d, onBack, onNav }) {
       </div>
     </div>}
     <Share day={d.day} title={d.title} />
-    <div style={{ padding: "18px 28px", display: "flex", justifyContent: "space-between", alignItems: "center", background: C.cream, borderTop: "1px solid " + C.border }}>
-      {prev ? <button onClick={() => onNav(prev.day)} style={nb}>&larr; Day {String(prev.day).padStart(2, "0")}</button> : <div />}
-      <button onClick={onBack} style={nb}>All Days</button>
-      {next ? <button onClick={() => onNav(next.day)} style={nb}>Day {String(next.day).padStart(2, "0")} &rarr;</button> : <div />}
-    </div>
-    <div style={{ padding: "24px 28px", textAlign: "center", background: C.white, borderTop: "1px solid " + C.border }}>
-      <div style={{ ...ff("s", 300, 12), letterSpacing: 1, color: C.muted }}>A 40-Day Journey into God's Presence</div>
-      <div style={{ ...ff("d", 600, 14), color: C.navy, marginTop: 6 }}>{S.theme} {S.year} &middot; {S.name}</div>
-    </div>
+    <DayNav d={d} onBack={onBack} onNav={onNav} />
     <Ft /><Bar h={4} />
   </div>;
 }
 
 // ── APP ──
 export default function App() {
-  const [pg, setPg] = useState("land");
+  const [tab, setTab] = useState("welcome");
   const [sel, setSel] = useState(null);
   const dd = sel ? DAYS.find(d => d.day === sel) : null;
   const w = { maxWidth: 740, margin: "0 auto", boxShadow: "0 0 60px rgba(26,31,58,0.08)" };
-  if (pg === "day" && dd) return <div style={w}><DayPg d={dd} onBack={() => { setPg("land"); setSel(null); }} onNav={d => setSel(d)} /><Analytics /></div>;
-  return <div style={w}><Landing onDay={d => { setSel(d); setPg("day"); }} /><Analytics /></div>;
+
+  const changeTab = (t) => { setSel(null); setTab(t); window.scrollTo(0, 0); };
+  const goToDay = (day) => { setSel(day); setTab("day"); window.scrollTo(0, 0); };
+  const backToLanding = () => { setSel(null); setTab("days"); window.scrollTo(0, 0); };
+
+  return <div style={w}>
+    <HeroAndTabs tab={tab} setTab={changeTab} />
+    {tab === "day" && dd ? (
+      <DayPg d={dd} onBack={backToLanding} onNav={goToDay} />
+    ) : (
+      <>
+        <LandingContent tab={tab} setTab={setTab} onDay={goToDay} />
+        <Ft /><Bar h={4} />
+      </>
+    )}
+    <Analytics />
+  </div>;
 }
